@@ -6,7 +6,7 @@
   <title>Engagera dig - Ekolivs</title>
   <meta
     name="description"
-    content="Engagera dig på Ekolivs för att stöda lokale producenter och ekologiska matodling."
+    content="Ekolivs drivs ideellt, engagera dig på Ekolivs för att stöda lokale producenter och ekologiska matodling. Medlemmar får rabatt på sina köp."
   />
   <meta name="robots" content="index, follow" />
 </svelte-head>
@@ -63,4 +63,4 @@
   ställa frågor, träffa andra medlemmar och prova att stå i butiken.
 </p>
 
-<img />
+<img src="engagera-dig-1.jpg" alt="Ekolivs medlemmar framför butiken">
