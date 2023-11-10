@@ -1,9 +1,9 @@
 <script lang="ts">
-  import Textfield from '@smui/textfield';
-  import HelperText from '@smui/textfield/helper-text';
-  import FormField from '@smui/form-field';
-  import Radio from '@smui/radio';
-  import Button, { Label } from '@smui/button';
+  // import Textfield from '@smui/textfield';
+  // import HelperText from '@smui/textfield/helper-text';
+  // import FormField from '@smui/form-field';
+  // import Radio from '@smui/radio';
+  // import Button, { Label } from '@smui/button';
 
   let email: string = '';
   let name: string = '';
@@ -40,7 +40,7 @@
   information om medlemskap och/eller engagemang i Ekolivs.
 </p>
 
-<div>
+<!-- <div>
   <Textfield type="email" label="E-post" bind:value={email} required />
 </div>
 
@@ -49,7 +49,7 @@
 </div>
 <div>
   <Textfield label="Telefonnummer" bind:value={phone} />
-</div>
+</div> -->
 
 <p>
   Ekolivs är ett kooperativ uppbyggt av medlemmar, därför vill vi gärna ha dig som medlem. Det
@@ -59,12 +59,12 @@
 </p>
 
 <p>Vill du bli medlem i Ekolivs?</p>
-{#each [true, false] as option}
+<!-- {#each [true, false] as option}
   <FormField>
     <Radio bind:group={wantMembership} value={option} touch />
     <span slot="label">{option ? 'Ja' : 'Nej'}</span>
   </FormField>
-{/each}
+{/each} -->
 
 <p>
   Ekolivs drivs helt ideellt och bemannas av medlemmar. Varje pass i butiken är 2-3 timmar långt.
@@ -73,21 +73,21 @@
 </p>
 
 <p>Vill du engagera dig aktivt och bemanna butiken?</p>
-{#each [true, false] as option}
+<!-- {#each [true, false] as option}
   <FormField>
     <Radio bind:group={activeMember} value={option} touch />
     <span slot="label">{option ? 'Ja, kontakta mig med mer information' : 'Nej (stödmedlem)'}</span>
   </FormField>
-{/each}
+{/each} -->
 
-<div>
+<!-- <div>
   <Textfield textarea bind:value={notes} label="Övrig Info">
     <HelperText slot="helper"
       >Om du har nåt till att skriva till oss, nämna det gärna här.</HelperText
     >
   </Textfield>
-</div>
+</div> -->
 
-<Button on:click={printInput}>
+<!-- <Button on:click={printInput}>
   <Label>Skicka</Label>
-</Button>
+</Button> -->

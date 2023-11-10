@@ -1,5 +1,5 @@
 <script>
-  import LayoutGrid, { Cell } from '@smui/layout-grid';
+  // import LayoutGrid, { Cell } from '@smui/layout-grid';
 </script>
 
 <svelte-head>
@@ -33,7 +33,7 @@
   </li>
 </ul>
 
-<LayoutGrid>
+<!-- <LayoutGrid>
   <Cell spanDevices={{ desktop: 6, tablet: 6, phone: 12 }}>
     <p>Aktiva medlemmar (Volontärer):</p>
     <ul>
@@ -49,7 +49,7 @@
       <li>5% rabatt på alla köp i butiken</li>
     </ul>
   </Cell>
-</LayoutGrid>
+</LayoutGrid> -->
 
 <h3>Såhär enkelt blir du medlem</h3>
 
@@ -63,4 +63,4 @@
   ställa frågor, träffa andra medlemmar och prova att stå i butiken.
 </p>
 
-<img src="engagera-dig-1.jpg" alt="Ekolivs medlemmar framför butiken">
+<img src="engagera-dig-1.jpg" alt="Ekolivs medlemmar framför butiken" />
