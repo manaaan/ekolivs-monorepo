@@ -1,18 +1,22 @@
 <script lang="ts">
   import '../app.postcss';
-  import { Footer, FooterLinkGroup, FooterLink, FooterIcon, FooterCopyright } from 'flowbite-svelte';
+  import { Footer, FooterLinkGroup, FooterLink, FooterIcon, FooterCopyright, Navbar, NavBrand, NavLi, NavUl, NavHamburger } from 'flowbite-svelte';
   import { FacebookSolid } from 'flowbite-svelte-icons';
 </script>
 
-<h1>Ekolivs</h1>
-
-<nav>
-  <a href="/">Home</a>
-  <a href="/vara-varor-2">Våra Varor</a>
-  <a href="/om-ekolivs-2">Om Ekolivs</a>
-  <a href="/engagera-dig">Engagera dig</a>
-  <a href="/kontakt">Hitta hit</a>
-</nav>
+<Navbar rounded color="form">
+  <NavBrand href="/">
+    <img src="logo_black.png" class="mr-3 h-6 sm:h-9" alt="Ekolivs logo" />
+  </NavBrand>
+  <NavHamburger />
+  <NavUl>
+    <NavLi href="/">Hem</NavLi>
+  	<NavLi href="/vara-varor-2">Våra Varor</NavLi>
+    <NavLi href="/om-ekolivs-2">Om Ekolivs</NavLi>
+    <NavLi href="/engagera-dig">Engagera dig</NavLi>
+    <NavLi href="/kontakt">Hitta hit</NavLi>
+  </NavUl>
+</Navbar>
 
 <slot />
 
