@@ -11,40 +11,50 @@
     NavLi,
     NavUl,
     NavHamburger,
-    DarkMode
+    DarkMode,
+
+    Skeleton,
+
+    ImagePlaceholder,
+
+    TextPlaceholder
+
+
+
   } from 'flowbite-svelte';
   import { FacebookSolid } from 'flowbite-svelte-icons';
 </script>
 
-<Navbar color="form">
-  <NavBrand href="/">
-    <!-- TODO: resolve hacky solution to js variables conditional render -->
-    <img
-      src="logo_black.png"
-      class="mr-3 h-6 sm:h-9 dark:invisible dark:hidden"
-      alt="Ekolivs logo"
-    />
-    <img src="logo_white.png" class="mr-3 h-6 sm:h-9 invisible dark:visible" alt="Ekolivs logo" />
-  </NavBrand>
-  <NavHamburger />
-  <NavUl>
+<div class="relative px-8">
+  <Navbar color="form" class="px-2 sm:px-4 py-2.5 fixed w-full z-20 top-0 left-0 border-b">
+    <NavBrand href="/">
+      <!-- TODO: resolve hacky solution to js variables conditional render -->
+      <img
+        src="logo_black.png"
+        class="mr-3 h-6 sm:h-9 block dark:hidden"
+        alt="Ekolivs logo"
+      />
+      <img src="logo_white.png" class="mr-3 h-6 sm:h-9 hidden dark:block" alt="Ekolivs logo" />
+    </NavBrand>
     <DarkMode
-      size="sm"
-      btnClass="p-0"
-      ariaLabel={`Switch dark/light mode`}
-      title={`Switch dark/light mode`}
-    />
-    <NavLi href="/">Hem</NavLi>
-    <NavLi href="/vara-varor-2">Våra Varor</NavLi>
-    <NavLi href="/om-ekolivs-2">Om Ekolivs</NavLi>
-    <NavLi href="/engagera-dig">Engagera dig</NavLi>
-    <NavLi href="/kontakt">Hitta hit</NavLi>
-  </NavUl>
-</Navbar>
+        size="sm"
+        btnClass="p-0"
+        ariaLabel={`Switch dark/light mode`}
+        title={`Switch dark/light mode`}
+      />
+    <NavHamburger />
+    <NavUl>
+      <NavLi href="/">Hem</NavLi>
+      <NavLi href="/vara-varor-2">Våra Varor</NavLi>
+      <NavLi href="/om-ekolivs-2">Om Ekolivs</NavLi>
+      <NavLi href="/engagera-dig">Engagera dig</NavLi>
+      <NavLi href="/kontakt">Hitta hit</NavLi>
+    </NavUl>
+  </Navbar>
 
-<!-- m-4 md:m-16  -->
-<div class="mt-4 mx-4 md:mx-16 mb-auto font-normal text-gray-700 dark:text-gray-300">
-  <slot />
+  <div class="overflow-scroll pb-16 mt-20 mx-4 md:mx-16 mb-auto font-normal text-gray-700 dark:text-gray-300">
+    <slot />
+  </div>
 </div>
 
 <Footer footerType="sitemap">
@@ -78,7 +88,7 @@
         <p>211 58 Malmö</p>
         <br />
         <p>info@ekolivs.se</p>
-        <p>Tel: 0736-10 18 90</p>
+        <p>Tel: +46 736-10 18 90</p>
       </div>
     </div>
   </div>

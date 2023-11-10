@@ -7,13 +7,13 @@
   <meta name="robots" content="index, follow" />
 </svelte-head>
 
-<h2>Vi bestämmer tillsammans vad som ska stå på våra hyllor</h2>
+<h3 class="text-3xl font-extrabold my-3">Vi bestämmer tillsammans vad som ska stå på våra hyllor</h3>
 <p>
   På Ronnebygatans Ekolivs säljer vi ekologiska produkter; obesprutade och utan kemiska tillsatser.
   Vi prioriterar även att ta in varor från småskaliga producenter i vår närhet. I så stor
   utsträckning som möjligt försöker vi främja rättvis handel och rättvisa arbetsvillkor.
 </p>
-
+<br/>
 <p>
   Nedan följer ett axplock av de varor vi säljer. Då utbudet och tillgången från våra leverantörer
   varierar är det bäst att besöka butiken för att se exakt vilka varor vi har för tillfället. Be oss
@@ -21,7 +21,7 @@
   besöka butiken.
 </p>
 
-<h2>Frukt och grönt</h2>
+<h4 class="text-2xl font-extrabold my-2">Frukt och grönt</h4>
 <p>
   Våra färska grönsaker och frukter kommer oftast från Mossagården och Vegostan. Utbudet varierar
   efter säsong, men nästan alltid har vi diverse rotfrukter, bananer, äpplen och citrusfrukter.
@@ -38,17 +38,17 @@
   goda smak. Våra syrade produkter kommer från Tistelvind.
 </p>
 
-<h2>Mejeriprodukter</h2>
+<h4 class="text-2xl font-extrabold my-2">Mejeriprodukter</h4>
 
 <p>Vi säljer ekologiska ägg från Hyllehög gård i Höllviken.</p>
 
-<h2>Nötter och frön</h2>
+<h4 class="text-2xl font-extrabold my-2">Nötter och frön</h4>
 
 <img />
 
 <p>Urvalet varierar, men du hittar ofta följande på Ekolivs:</p>
 
-<ul>
+<ul class="list-disc list-inside">
   <li>Valnötter</li>
   <li>Linfrön</li>
   <li>Sesamfrön</li>
@@ -66,16 +66,16 @@
   </li>
 </ul>
 
-<h2>Godis och snacks</h2>
+<h4 class="text-2xl font-extrabold my-2">Godis och snacks</h4>
 
 <p>
   Utbudet av godis och snacks i butiken varierar, men oftast har vi flera sorters choklad, lakrits
   och någon form av chips.
 </p>
 
-<h2>Drycker</h2>
+<h4 class="text-2xl font-extrabold my-2">Drycker</h4>
 
-<ul>
+<ul class="list-disc list-inside">
   <li>
     Kombucha<br />
     Kombucha är fermenterat te som får sin smak och sina hälsosamma egenskaper från en mikrobiell kultur
@@ -95,7 +95,7 @@
   <li>Saft från Grangärde musteri.</li>
 </ul>
 
-<h2>Kaffe och te</h2>
+<h4 class="text-2xl font-extrabold my-2">Kaffe och te</h4>
 
 <p>
   Kaffe är en av de ekologiska varor som skiljer sig mest från sitt konventionella alternativ. Dels
@@ -123,11 +123,11 @@
 
 <img />
 
-<h2>Sylt och marmelad</h2>
+<h4 class="text-2xl font-extrabold my-2">Sylt och marmelad</h4>
 
 <p>Från svenska Yallatrappan och danska Søbogaard, i varierande urval.</p>
 
-<h2>Delikatesser</h2>
+<h4 class="text-2xl font-extrabold my-2">Delikatesser</h4>
 
 <p>Oliver från Epikouros</p>
 <p>Mango Chutney från Naturata</p>
@@ -136,7 +136,7 @@
 
 <img />
 
-<h2>Oljor och vinäger</h2>
+<h4 class="text-2xl font-extrabold my-2">Oljor och vinäger</h4>
 
 <p>
   Rapsolja, neutral och smaksatt<br />från Gunnarshögs gård på Österlen, på flaska och bag-in-box
