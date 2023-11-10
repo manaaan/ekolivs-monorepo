@@ -1,24 +1,51 @@
 <script lang="ts">
   import '../app.postcss';
-  import { Footer, FooterLinkGroup, FooterLink, FooterIcon, FooterCopyright, Navbar, NavBrand, NavLi, NavUl, NavHamburger } from 'flowbite-svelte';
+  import {
+    Footer,
+    FooterLinkGroup,
+    FooterLink,
+    FooterIcon,
+    FooterCopyright,
+    Navbar,
+    NavBrand,
+    NavLi,
+    NavUl,
+    NavHamburger,
+    DarkMode
+  } from 'flowbite-svelte';
   import { FacebookSolid } from 'flowbite-svelte-icons';
 </script>
 
-<Navbar rounded color="form">
+<Navbar color="form">
   <NavBrand href="/">
-    <img src="logo_black.png" class="mr-3 h-6 sm:h-9" alt="Ekolivs logo" />
+    <!-- TODO: resolve hacky solution to js variables conditional render -->
+    <img
+      src="logo_black.png"
+      class="mr-3 h-6 sm:h-9 dark:invisible dark:hidden"
+      alt="Ekolivs logo"
+    />
+    <img src="logo_white.png" class="mr-3 h-6 sm:h-9 invisible dark:visible" alt="Ekolivs logo" />
   </NavBrand>
   <NavHamburger />
   <NavUl>
+    <DarkMode
+      size="sm"
+      btnClass="p-0"
+      ariaLabel={`Switch dark/light mode`}
+      title={`Switch dark/light mode`}
+    />
     <NavLi href="/">Hem</NavLi>
-  	<NavLi href="/vara-varor-2">Våra Varor</NavLi>
+    <NavLi href="/vara-varor-2">Våra Varor</NavLi>
     <NavLi href="/om-ekolivs-2">Om Ekolivs</NavLi>
     <NavLi href="/engagera-dig">Engagera dig</NavLi>
     <NavLi href="/kontakt">Hitta hit</NavLi>
   </NavUl>
 </Navbar>
 
-<slot />
+<!-- m-4 md:m-16  -->
+<div class="mt-4 mx-4 md:mx-16 mb-auto font-normal text-gray-700 dark:text-gray-300">
+  <slot />
+</div>
 
 <Footer footerType="sitemap">
   <div class="grid grid-cols-1 sm:grid-cols-2 gap-8 py-8 px-6 md:grid-cols-4">

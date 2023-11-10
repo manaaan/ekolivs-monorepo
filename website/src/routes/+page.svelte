@@ -1,7 +1,3 @@
-<script>
-  import { Card, DarkMode } from 'flowbite-svelte';
-</script>
-
 <svelte-head>
   <title>Ekolivs</title>
   <meta name="description" content="Ekologisk matbutik på Ronnebygatan i Malmö" />
@@ -9,5 +5,3 @@
 </svelte-head>
 
 <p class="text-gray-800 dark:text-gray-200">Välkommen till Ekolivs</p>
-
-<DarkMode />
