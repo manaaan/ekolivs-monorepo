@@ -1,3 +1,9 @@
+<svelte-head>
+  <title>Hitta hit - Ekolivs</title>
+  <meta name="description" content="Hitta vår lilla butik i Malmö." />
+  <meta name="robots" content="index, follow" />
+</svelte-head>
+
 <h2>Välkommen in till vår ekologiska lilla butik på hörnet</h2>
 
 <p>

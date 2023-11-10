@@ -1,3 +1,12 @@
+<svelte-head>
+  <title>Om Ekolivs - Ekolivs</title>
+  <meta
+    name="description"
+    content="Ekolivs är en liten, ideellt driven livsmedelsbutik i centrala Malmö, som funnits i sin nuvarande form sedan 2006. Vi är ett kooperativ och verksamheten drivs demokratiskt av föreningens medlemmar genom medlemsmöten och olika arbetsgrupper."
+  />
+  <meta name="robots" content="index, follow" />
+</svelte-head>
+
 <h2>Ekologiskt och lokalt, tillsammans</h2>
 
 <p>

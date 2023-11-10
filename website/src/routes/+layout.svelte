@@ -23,7 +23,7 @@
       <p><a href="/om-ekolivs-2">Om Ekolivs</a></p>
       <p><a href="/stadgar">Våra stadgar</a></p>
       <p><a href="/engagera-dig">Engagera dig i Ekolivs</a></p>
-      <p><a href="/bli-stodmedlem-2">Bli stödmedlem</a></p>
+      <p><a href="/bli-medlem">Bli medlem</a></p>
       <p><a href="/kontakt">Hitta hit</a></p>
     </Cell>
     <Cell spanDevices={{ desktop: 3, tablet: 6, phone: 12 }}>&nbsp;</Cell>

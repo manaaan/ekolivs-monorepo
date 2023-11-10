@@ -1,3 +1,12 @@
+<svelte-head>
+  <title>Våra varor - Ekolivs</title>
+  <meta
+    name="description"
+    content="På Ronnebygatans Ekolivs säljer vi ekologiska produkter; obesprutade och utan kemiska tillsatser. Vi prioriterar även att ta in varor från småskaliga producenter i vår närhet."
+  />
+  <meta name="robots" content="index, follow" />
+</svelte-head>
+
 <h2>Vi bestämmer tillsammans vad som ska stå på våra hyllor</h2>
 <p>
   På Ronnebygatans Ekolivs säljer vi ekologiska produkter; obesprutade och utan kemiska tillsatser.

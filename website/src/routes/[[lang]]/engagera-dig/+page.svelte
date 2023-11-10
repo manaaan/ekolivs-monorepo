@@ -2,6 +2,15 @@
   import LayoutGrid, { Cell } from '@smui/layout-grid';
 </script>
 
+<svelte-head>
+  <title>Engagera dig - Ekolivs</title>
+  <meta
+    name="description"
+    content="Engagera dig på Ekolivs för att stöda lokale producenter och ekologiska matodling."
+  />
+  <meta name="robots" content="index, follow" />
+</svelte-head>
+
 <h2>Vi driver en ekologisk butik tillsammans – vill du vara med?</h2>
 
 <p>
