@@ -1,5 +1,5 @@
 <script>
-  // import LayoutGrid, { Cell } from '@smui/layout-grid';
+  import { Img } from 'flowbite-svelte';
 </script>
 
 <svelte-head>
@@ -11,7 +11,7 @@
   <meta name="robots" content="index, follow" />
 </svelte-head>
 
-<h2>Vi driver en ekologisk butik tillsammans – vill du vara med?</h2>
+<h2>Vi driver en ekologisk butik tillsammans - vill du vara med?</h2>
 
 <p>
   Ekolivs drivs helt med ideella krafter. Som aktiv medlem håller en butiken öppen och tillsammans i
@@ -33,8 +33,8 @@
   </li>
 </ul>
 
-<!-- <LayoutGrid>
-  <Cell spanDevices={{ desktop: 6, tablet: 6, phone: 12 }}>
+<div class="grid grid-cols-2 gap-8 py-8 px-6">
+  <div>
     <p>Aktiva medlemmar (Volontärer):</p>
     <ul>
       <li>15% rabatt på alla köp i butiken.</li>
@@ -42,14 +42,14 @@
         Håller butiken öppen ca två pass i månaden och engagerar dig i en av våra arbetsgrupper
       </li>
     </ul>
-  </Cell>
-  <Cell spanDevices={{ desktop: 6, tablet: 6, phone: 12 }}>
+  </div>
+  <div>
     <p>Stödmedlemmar:</p>
     <ul>
       <li>5% rabatt på alla köp i butiken</li>
     </ul>
-  </Cell>
-</LayoutGrid> -->
+  </div>
+</div>
 
 <h3>Såhär enkelt blir du medlem</h3>
 
@@ -63,4 +63,4 @@
   ställa frågor, träffa andra medlemmar och prova att stå i butiken.
 </p>
 
-<img src="engagera-dig-1.jpg" alt="Ekolivs medlemmar framför butiken" />
+<Img src="engagera-dig-1.jpg" alt="Ekolivs medlemmar framför butiken" />
