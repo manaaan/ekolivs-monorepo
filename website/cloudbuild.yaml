@@ -1,21 +1,23 @@
 substitutions:
-  IMAGE_PATH: europe-west1-docker.pkg.dev/${PROJECT_ID}/ekolivs-eu/ekolivs-website
+  _IMAGE_PATH: europe-west1-docker.pkg.dev/${PROJECT_ID}/ekolivs-eu/ekolivs-website
+options:
+  dynamicSubstitutions: true
 
 steps:
   # Docker Build
   - name: "gcr.io/cloud-builders/docker"
     args: ["build", "-t", 
-           "${IMAGE_PATH}:$COMMIT_SHA", 
+           "${_IMAGE_PATH}:$COMMIT_SHA", 
            "."]
 
   # Docker Push
   - name: "gcr.io/cloud-builders/docker"
     args: ["push", 
-           "${IMAGE_PATH}:$COMMIT_SHA"]
+           "${_IMAGE_PATH}:$COMMIT_SHA"]
 
   - name: "gcr.io/google.com/cloudsdktool/cloud-sdk"
     entrypoint: gcloud
-    args: ["run", "deploy", "ekolivs-website", "--image", "${IMAGE_PATH}:$COMMIT_SHA", "--region", "europe-west1"]
+    args: ["run", "deploy", "ekolivs-website", "--image", "${_IMAGE_PATH}:$COMMIT_SHA", "--region", "europe-west1"]
 
 images:
-- ${IMAGE_PATH}:$COMMIT_SHA
+- ${_IMAGE_PATH}:$COMMIT_SHA
