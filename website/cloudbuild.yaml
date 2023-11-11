@@ -8,6 +8,7 @@ steps:
   - name: "gcr.io/cloud-builders/docker"
     args: ["build", "-t", 
            "${_IMAGE_PATH}:$COMMIT_SHA", 
+           "-f", "./website/Dockerfile",
            "."]
 
   # Docker Push
