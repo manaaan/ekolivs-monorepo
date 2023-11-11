@@ -3,13 +3,12 @@ FROM node:20-alpine as build
 
 # update and install the latest dependencies on docker base image
 # Add non root user to the docker image and set the user
-RUN apk update && apk upgrade && adduser -D svelteuser
-USER svelteuser
+RUN apk update && apk upgrade
 
 WORKDIR /app
 
 # copy the sveltkit project content with proper permission for the user svelteuser
-COPY --chown=svelteuser:svelteuser . /app
+COPY . /app
 
 # install all the project npm dependencies and 
 # build the svelte project to generate the artifacts in build directory
@@ -18,13 +17,12 @@ RUN npm ci && npm run build
 FROM node:20-alpine
 # update and install latest dependencies, add dumb-init package
 # add and set non root user
-RUN apk update && apk upgrade && apk add dumb-init && adduser -D svelteuser
-USER svelteuser
+RUN apk update && apk upgrade && apk add dumb-init
 
 WORKDIR /app
 
 # copy the build directory to the /app directory of second stage 
-COPY --chown=svelteuser:svelteuser --from=build /app/build /app/package.json ./
+COPY --from=build /app/build /app/package.json ./
 
 EXPOSE 8080
 
