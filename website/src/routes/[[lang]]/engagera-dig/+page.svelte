@@ -27,7 +27,7 @@
 
 <Card color="primary" class="max-w-xl mx-auto">
   <b>Alla medlemmar:</b>
-  <ul class="list-disc list-outside">
+  <ul class="list-disc list-inside space-y-1">
     <li>Inbjudan till alla medlemsmöten och bli en del av vår härliga gemenskap</li>
     <li>
       Rösträtt i kooperativet och vara med och påverka vilka varor vi ska ta in och hur kooperativet
@@ -36,10 +36,10 @@
   </ul>
 </Card>
 
-<div class="grid grid-cols-2 gap-8 py-8 px-6">
+<div class="grid grid-cols-2 gap-8 py-8">
   <Card color="primary" class="max-w-xl ml-auto">
     <b>Aktiva medlemmar (Volontärer):</b>
-    <ul class="list-disc list-outside">
+    <ul class="list-disc list-inside space-y-1">
       <li>15% rabatt på alla köp i butiken.</li>
       <li>
         Håller butiken öppen ca två pass i månaden och engagerar dig i en av våra arbetsgrupper
@@ -48,7 +48,7 @@
   </Card>
   <Card color="blue" class="max-w-xl">
     <b>Stödmedlemmar:</b>
-    <ul class="list-disc list-outside">
+    <ul class="list-disc list-inside space-y-1">
       <li>5% rabatt på alla köp i butiken</li>
     </ul>
   </Card>

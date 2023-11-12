@@ -44,33 +44,33 @@
   </div>
 </div>
 
-<Footer footerType="sitemap">
+<Footer footerType="sitemap" class="bg-primary-100 dark:bg-primary-700 text-gray-900 dark:text-gray-200 border-gray-300 dark:border-gray-700">
   <div class="grid grid-cols-1 sm:grid-cols-2 gap-8 py-8 px-6 md:grid-cols-4">
     <div>
-      <h2 class="mb-6 text-sm font-semibold text-gray-400 uppercase">Ekolivs</h2>
-      <FooterLinkGroup ulClass="text-gray-300">
+      <h2 class="mb-6 text-sm font-semibold text-gray dark:text-gray-100 uppercase">Ekolivs</h2>
+      <FooterLinkGroup ulClass="text-gray-900 dark:text-gray-200">
         <FooterLink liClass="mb-4" href="/vara-varor-2">Våra Varor</FooterLink>
         <FooterLink liClass="mb-4" href="/om-ekolivs-2">Om Ekolivs</FooterLink>
         <FooterLink liClass="mb-4" href="/kontakt">Hitta hit</FooterLink>
       </FooterLinkGroup>
     </div>
     <div>
-      <h2 class="mb-6 text-sm font-semibold uppercase text-gray-400">Medlemskap</h2>
-      <FooterLinkGroup ulClass="text-gray-300">
+      <h2 class="mb-6 text-sm font-semibold uppercase text-gray dark:text-gray-100">Medlemskap</h2>
+      <FooterLinkGroup ulClass="text-gray-900 dark:text-gray-200">
         <FooterLink liClass="mb-4" href="/stadgar">Våra stadgar</FooterLink>
         <FooterLink liClass="mb-4" href="/engagera-dig">Engagera dig i Ekolivs</FooterLink>
         <FooterLink liClass="mb-4" href="/bli-medlem">Bli medlem</FooterLink>
       </FooterLinkGroup>
     </div>
     <div>
-      <h2 class="mb-6 text-sm font-semibold uppercase text-gray-400">Öppettider</h2>
-      <div class="text-gray-300">
+      <h2 class="mb-6 text-sm font-semibold uppercase text-gray dark:text-gray-100">Öppettider</h2>
+      <div>
         <p>Tis. - Fre. | 15.00 - 18.00</p>
       </div>
     </div>
     <div>
-      <h2 class="mb-6 text-sm font-semibold uppercase text-gray-400">Kontakt</h2>
-      <div class="text-gray-300">
+      <h2 class="mb-6 text-sm font-semibold uppercase text-gray dark:text-gray-100">Kontakt</h2>
+      <div>
         <p>Ronnebygatan 1</p>
         <p>211 58 Malmö</p>
         <br />
@@ -79,18 +79,18 @@
       </div>
     </div>
   </div>
-  <div class="py-6 px-4 bg-gray-700 md:flex md:items-center md:justify-between">
-    <FooterCopyright spanClass="text-sm text-gray-300 sm:text-center" href="/" by="Ekolivs" />
+  <div class="py-6 px-4 bg-primary-100 dark:bg-primary-700 text-gray-900 dark:text-white border-gray-300 dark:border-gray-700 md:flex md:items-center md:justify-between">
+    <FooterCopyright spanClass="text-sm sm:text-center" href="/" by="Ekolivs" />
     <div class="flex mt-4 space-x-6 sm:justify-center md:mt-0">
       <FooterIcon href="https://www.facebook.com/Ekolivs/" target="_blank">
         <FacebookSolid
-          class="w-4 h-4 text-gray-500 dark:text-gray-500 hover:text-gray-900 dark:hover:text-white"
+          class="w-6 h-6 text-gray-500 dark:text-gray-300 hover:text-gray-900 dark:hover:text-white"
         />
       </FooterIcon>
       <FooterIcon href="https://www.instagram.com/ekolivs/" target="_blank">
         <!-- Instagram logo -->
         <svg
-          class="w-4 h-4 text-gray-500 dark:text-gray-500 hover:text-gray-900 dark:hover:text-white"
+          class="w-6 h-6 text-gray-500 dark:text-gray-300 hover:text-gray-900 dark:hover:text-white"
           xmlns="http://www.w3.org/2000/svg"
           fill="currentColor"
           viewBox="0 0 24 24"
