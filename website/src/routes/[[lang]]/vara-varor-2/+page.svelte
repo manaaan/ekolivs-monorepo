@@ -7,13 +7,15 @@
   <meta name="robots" content="index, follow" />
 </svelte-head>
 
-<h3 class="text-3xl font-extrabold my-3">Vi bestämmer tillsammans vad som ska stå på våra hyllor</h3>
+<h3 class="text-3xl font-extrabold my-3">
+  Vi bestämmer tillsammans vad som ska stå på våra hyllor
+</h3>
 <p>
   På Ronnebygatans Ekolivs säljer vi ekologiska produkter; obesprutade och utan kemiska tillsatser.
   Vi prioriterar även att ta in varor från småskaliga producenter i vår närhet. I så stor
   utsträckning som möjligt försöker vi främja rättvis handel och rättvisa arbetsvillkor.
 </p>
-<br/>
+<br />
 <p>
   Nedan följer ett axplock av de varor vi säljer. Då utbudet och tillgången från våra leverantörer
   varierar är det bäst att besöka butiken för att se exakt vilka varor vi har för tillfället. Be oss
@@ -28,7 +30,7 @@
   Leveransen till butiken kommer huvudsakligen på torsdagar.
 </p>
 
-<img />
+<!-- <img /> -->
 
 <p>
   Mjölksyrade grönsaker innehåller mycket vitaminer och mineraler. Dessutom bildas probiotika vid
@@ -44,7 +46,7 @@
 
 <h4 class="text-2xl font-extrabold my-2">Nötter och frön</h4>
 
-<img />
+<!-- <img /> -->
 
 <p>Urvalet varierar, men du hittar ofta följande på Ekolivs:</p>
 
@@ -105,7 +107,7 @@
   på de konventionella odlingarna enligt föreningen Swedwatch.
 </p>
 
-<img />
+<!-- <img /> -->
 
 <p>
   K’inal importerar kaffe från zapatistiska kooperativ i södra Mexiko. I nuläget från kooperativet
@@ -121,7 +123,7 @@
 
 <p>Te i varierande urval</p>
 
-<img />
+<!-- <img /> -->
 
 <h4 class="text-2xl font-extrabold my-2">Sylt och marmelad</h4>
 
@@ -134,7 +136,7 @@
 <p>Pesto från la Bio Idea</p>
 <p>Chokladkräm från Biona Organic</p>
 
-<img />
+<!-- <img /> -->
 
 <h4 class="text-2xl font-extrabold my-2">Oljor och vinäger</h4>
 
@@ -142,4 +144,4 @@
   Rapsolja, neutral och smaksatt<br />från Gunnarshögs gård på Österlen, på flaska och bag-in-box
 </p>
 
-<img />
+<!-- <img /> -->

@@ -7,7 +7,9 @@
   <meta name="robots" content="noindex, follow" />
 </svelte-head>
 
-<h3 class="text-3xl font-extrabold my-3">Stadgar för Ekolivs (Ronnebygatans ekologiska livs och boklåda, ekonomisk förening)</h3>
+<h3 class="text-3xl font-extrabold my-3">
+  Stadgar för Ekolivs (Ronnebygatans ekologiska livs och boklåda, ekonomisk förening)
+</h3>
 
 <p>Senast reviderade vid årsstämma 2 april 2017.</p>
 
@@ -135,7 +137,7 @@
 <h4 class="text-2xl font-extrabold my-2">§ 18 Föreningsstämma</h4>
 
 <p>På ordinarie föreningsstämma skall följande ärenden förekomma:</p>
-<br/>
+<br />
 <ol class="list-decimal list-inside">
   <li>Val av ordförande.</li>
   <li>Val av protokollförare.</li>

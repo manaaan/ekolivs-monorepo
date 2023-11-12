@@ -11,16 +11,7 @@
     NavLi,
     NavUl,
     NavHamburger,
-    DarkMode,
-
-    Skeleton,
-
-    ImagePlaceholder,
-
-    TextPlaceholder
-
-
-
+    DarkMode
   } from 'flowbite-svelte';
   import { FacebookSolid } from 'flowbite-svelte-icons';
 </script>
@@ -29,19 +20,15 @@
   <Navbar color="form" class="px-2 sm:px-4 py-2.5 fixed w-full z-20 top-0 left-0 border-b">
     <NavBrand href="/">
       <!-- TODO: resolve hacky solution to js variables conditional render -->
-      <img
-        src="logo_black.png"
-        class="mr-3 h-6 sm:h-9 block dark:hidden"
-        alt="Ekolivs logo"
-      />
+      <img src="logo_black.png" class="mr-3 h-6 sm:h-9 block dark:hidden" alt="Ekolivs logo" />
       <img src="logo_white.png" class="mr-3 h-6 sm:h-9 hidden dark:block" alt="Ekolivs logo" />
     </NavBrand>
     <DarkMode
-        size="sm"
-        btnClass="p-0"
-        ariaLabel={`Switch dark/light mode`}
-        title={`Switch dark/light mode`}
-      />
+      size="sm"
+      btnClass="p-0"
+      ariaLabel={`Switch dark/light mode`}
+      title={`Switch dark/light mode`}
+    />
     <NavHamburger />
     <NavUl>
       <NavLi href="/">Hem</NavLi>
@@ -52,7 +39,7 @@
     </NavUl>
   </Navbar>
 
-  <div class="overflow-scroll pb-16 mt-20 mx-4 md:mx-16 mb-auto font-normal text-gray-700 dark:text-gray-300">
+  <div class="pb-16 mt-20 mx-4 md:mx-16 mb-auto font-normal text-gray-700 dark:text-gray-300">
     <slot />
   </div>
 </div>

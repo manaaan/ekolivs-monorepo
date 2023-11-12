@@ -1,6 +1,11 @@
 <script lang="ts">
-  import { Button, Card, Input, Label, Radio } from 'flowbite-svelte';
-  import { EnvelopeSolid, UserCircleSolid, PhoneSolid, InfoCircleOutline } from 'flowbite-svelte-icons';
+  import { Button, Input, Label, Radio } from 'flowbite-svelte';
+  import {
+    EnvelopeSolid,
+    UserCircleSolid,
+    PhoneSolid,
+    InfoCircleOutline
+  } from 'flowbite-svelte-icons';
   import { Textarea } from 'flowbite-svelte';
   let textareaprops = {
     id: 'notes',
@@ -9,17 +14,6 @@
     rows: 4,
     placeholder: 'Om du har nåt till att skriva till oss...'
   };
-
-  let email: string = '';
-  let name: string = '';
-  let phone: string = '';
-  let wantMembership = true;
-  let activeMember = true;
-  let notes = '';
-
-  function printInput() {
-    console.log(email);
-  }
 </script>
 
 <svelte-head>
@@ -36,9 +30,7 @@
   förening.
 </p>
 <br />
-<p>
-  När du blir medlem får du rösträtt i föreningen och rabatt i butiken.
-</p>
+<p>När du blir medlem får du rösträtt i föreningen och rabatt i butiken.</p>
 <br />
 <p>
   <a href="/engagera-dig" class="text-primary-500 hover:text-primary-300">Mer info om medlemskap</a>
@@ -48,7 +40,7 @@
   Låter det intressant? Ange följande uppgifter nedan så kommer vi att kontakta dig för vidare
   information om medlemskap och/eller engagemang i Ekolivs.
 </p>
-<br/>
+<br />
 <form class="grid gap-4 mb-20">
   <div class="mb-2">
     <Label for="email" class="block mb-2">E-post</Label>
@@ -71,12 +63,10 @@
 
   <p class="leading-tight">
     <InfoCircleOutline class="float-left mr-2" />
-    Ekolivs är ett kooperativ uppbyggt av medlemmar, därför vill vi gärna ha dig som medlem. Det
-    kostar 100kr/år i medlemsavgift och 200 kr i insats (insatsen har du möjlighet att få tillbaka
-    om du går ur Ekolivs). Betalningsinformationen kommer på nästa sida. När du blir medlem ställer
-    du dig bakom <a href="/stadgar" class="text-primary-500 hover:text-primary-300"
-      >stadgarna för föreningen</a
-    >.
+    Ekolivs är ett kooperativ uppbyggt av medlemmar, därför vill vi gärna ha dig som medlem. Det kostar
+    100kr/år i medlemsavgift och 200 kr i insats (insatsen har du möjlighet att få tillbaka om du går
+    ur Ekolivs). Betalningsinformationen kommer på nästa sida. När du blir medlem ställer du dig bakom
+    <a href="/stadgar" class="text-primary-500 hover:text-primary-300">stadgarna för föreningen</a>.
   </p>
 
   <Label for="wantMembership">Vill du bli medlem i Ekolivs?</Label>
@@ -90,14 +80,12 @@
   </div>
   <p class="leading-tight">
     <InfoCircleOutline class="float-left mr-2" />
-    Ekolivs drivs helt ideellt och bemannas av medlemmar. Varje pass i butiken är 2-3 timmar långt.
-    Som aktiv medlem bemannar du butiken 2 pass/månad och engagerar dig i en arbetsgrupp. Då får du
-    också engagemangsrabatten.
+    Ekolivs drivs helt ideellt och bemannas av medlemmar. Varje pass i butiken är 2-3 timmar långt. Som
+    aktiv medlem bemannar du butiken 2 pass/månad och engagerar dig i en arbetsgrupp. Då får du också
+    engagemangsrabatten.
   </p>
 
-  <Label for="activeMember">
-    Vill du engagera dig aktivt och bemanna butiken?
-  </Label>
+  <Label for="activeMember">Vill du engagera dig aktivt och bemanna butiken?</Label>
   <div class="grid grid-cols-2 gap-6">
     <div class="rounded border border-gray-200 dark:border-gray-700">
       <Radio name="activeMember" class="w-full p-4">Ja, kontakta mig med mer information</Radio>

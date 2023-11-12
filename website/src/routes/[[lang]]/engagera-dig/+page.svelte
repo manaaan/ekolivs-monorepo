@@ -11,7 +11,9 @@
   <meta name="robots" content="index, follow" />
 </svelte-head>
 
-<h3 class="text-3xl font-extrabold my-3">Vi driver en ekologisk butik tillsammans - vill du vara med?</h3>
+<h3 class="text-3xl font-extrabold my-3">
+  Vi driver en ekologisk butik tillsammans - vill du vara med?
+</h3>
 
 <p>
   Ekolivs drivs helt med ideella krafter. Som aktiv medlem håller en butiken öppen och tillsammans i
@@ -56,7 +58,8 @@
 
 <p>
   Är du intresserad av att engagera dig i Ekolivs och hjälpa till att driva och utveckla butiken?
-  Kul! <a href="/bli-medlem" class="text-primary-500 hover:text-primary-300">Fyll i formuläret</a> eller kom in och prata med oss i butiken.
+  Kul! <a href="/bli-medlem" class="text-primary-500 hover:text-primary-300">Fyll i formuläret</a> eller
+  kom in och prata med oss i butiken.
 </p>
 
 <p>

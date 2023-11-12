@@ -5,20 +5,27 @@ options:
 
 steps:
   # Docker Build
-  - name: "gcr.io/cloud-builders/docker"
+  - name: 'gcr.io/cloud-builders/docker'
     dir: website
-    args: ["build", "-t", 
-           "${_IMAGE_PATH}:$COMMIT_SHA", 
-           "."]
+    args: ['build', '-t', '${_IMAGE_PATH}:$COMMIT_SHA', '.']
 
   # Docker Push
-  - name: "gcr.io/cloud-builders/docker"
-    args: ["push", 
-           "${_IMAGE_PATH}:$COMMIT_SHA"]
+  - name: 'gcr.io/cloud-builders/docker'
+    args: ['push', '${_IMAGE_PATH}:$COMMIT_SHA']
 
-  - name: "gcr.io/google.com/cloudsdktool/cloud-sdk"
+  - name: 'gcr.io/google.com/cloudsdktool/cloud-sdk'
     entrypoint: gcloud
-    args: ["run", "deploy", "ekolivs-website", "--image", "${_IMAGE_PATH}:$COMMIT_SHA", "--region", "europe-west1", "--allow-unauthenticated"]
+    args:
+      [
+        'run',
+        'deploy',
+        'ekolivs-website',
+        '--image',
+        '${_IMAGE_PATH}:$COMMIT_SHA',
+        '--region',
+        'europe-west1',
+        '--allow-unauthenticated'
+      ]
 
 images:
-- ${_IMAGE_PATH}:$COMMIT_SHA
+  - ${_IMAGE_PATH}:$COMMIT_SHA
