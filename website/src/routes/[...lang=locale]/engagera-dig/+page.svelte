@@ -67,4 +67,4 @@
   ställa frågor, träffa andra medlemmar och prova att stå i butiken.
 </p>
 
-<Img src="engagera-dig-1.jpg" alt="Ekolivs medlemmar framför butiken" imgClass="my-4 mx-auto" />
+<Img src="/engagera-dig-1.jpg" alt="Ekolivs medlemmar framför butiken" imgClass="my-4 mx-auto" />

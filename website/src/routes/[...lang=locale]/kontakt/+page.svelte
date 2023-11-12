@@ -38,7 +38,7 @@
 <p>.. och såhär fint ser det ut om du hamnat rätt:</p>
 
 <Img
-  src="hitta-hit-1.webp"
+  src="/hitta-hit-1.webp"
   alt="Bild av Ekolivs butiken på säljs event med många kunder framför butiken"
   imgClass="my-4"
 />

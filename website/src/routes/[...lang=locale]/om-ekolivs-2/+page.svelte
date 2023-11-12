@@ -1,5 +1,6 @@
 <script>
   import { Gallery } from 'flowbite-svelte';
+  import { t } from '$lib/translations';
 
   const images = [
     {
@@ -11,7 +12,7 @@
 </script>
 
 <svelte-head>
-  <title>Om Ekolivs - Ekolivs</title>
+  <title>{$t('page.about.title')}</title>
   <meta
     name="description"
     content="Ekolivs är en liten, ideellt driven livsmedelsbutik i centrala Malmö, som funnits i sin nuvarande form sedan 2006. Vi är ett kooperativ och verksamheten drivs demokratiskt av föreningens medlemmar genom medlemsmöten och olika arbetsgrupper."

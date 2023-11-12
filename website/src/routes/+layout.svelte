@@ -1,4 +1,5 @@
 <script lang="ts">
+  import { goto } from '$app/navigation';
   import '../app.postcss';
   import {
     Footer,
@@ -11,17 +12,31 @@
     NavLi,
     NavUl,
     NavHamburger,
-    DarkMode
+    DarkMode,
+    Select,
+    type SelectOptionType
   } from 'flowbite-svelte';
   import { FacebookSolid } from 'flowbite-svelte-icons';
+  import { t, locale, locales } from '$lib/translations';
+  import { page } from '$app/stores';
+
+  let langSelected = $locale;
+  const langs: SelectOptionType<string>[] = [];
+  for (const loc of $locales) {
+    langs.push({
+      value: loc,
+      name: $t(`lang.${loc}`)
+    });
+  }
+  $: ({ route } = $page.data);
 </script>
 
 <div class="relative px-8">
   <Navbar color="form" class="px-2 sm:px-4 py-2.5 fixed w-full z-20 top-0 left-0 border-b">
     <NavBrand href="/">
       <!-- TODO: resolve hacky solution to js variables conditional render -->
-      <img src="logo_black.png" class="mr-3 h-6 sm:h-9 block dark:hidden" alt="Ekolivs logo" />
-      <img src="logo_white.png" class="mr-3 h-6 sm:h-9 hidden dark:block" alt="Ekolivs logo" />
+      <img src="/logo_black.png" class="mr-3 h-6 sm:h-9 block dark:hidden" alt="Ekolivs logo" />
+      <img src="/logo_white.png" class="mr-3 h-6 sm:h-9 hidden dark:block" alt="Ekolivs logo" />
     </NavBrand>
     <DarkMode
       size="sm"
@@ -44,7 +59,10 @@
   </div>
 </div>
 
-<Footer footerType="sitemap" class="bg-primary-100 dark:bg-primary-700 text-gray-900 dark:text-gray-200 border-gray-300 dark:border-gray-700">
+<Footer
+  footerType="sitemap"
+  class="bg-primary-100 dark:bg-primary-700 text-gray-900 dark:text-gray-200 border-gray-300 dark:border-gray-700"
+>
   <div class="grid grid-cols-1 sm:grid-cols-2 gap-8 py-8 px-6 md:grid-cols-4">
     <div>
       <h2 class="mb-6 text-sm font-semibold text-gray dark:text-gray-100 uppercase">Ekolivs</h2>
@@ -73,14 +91,27 @@
       <div>
         <p>Ronnebygatan 1</p>
         <p>211 58 Malmö</p>
+        n/undefined/undefined/
         <br />
         <p>info@ekolivs.se</p>
         <p>Tel: +46 736-10 18 90</p>
       </div>
     </div>
   </div>
-  <div class="py-6 px-4 bg-primary-100 dark:bg-primary-700 text-gray-900 dark:text-white border-gray-300 dark:border-gray-700 md:flex md:items-center md:justify-between">
+  <div
+    class="py-6 px-4 bg-primary-100 dark:bg-primary-700 text-gray-900 dark:text-white border-gray-300 dark:border-gray-700 md:flex md:items-center md:justify-between"
+  >
     <FooterCopyright spanClass="text-sm sm:text-center" href="/" by="Ekolivs" />
+    <Select
+      class="w-auto max-w-200 mt-2"
+      items={langs}
+      bind:value={langSelected}
+      on:change={({ target }) => {
+        // @ts-expect-error value does exist on target
+        goto(`/${target.value}${route}`);
+      }}
+      placeholder="Choose language"
+    />
     <div class="flex mt-4 space-x-6 sm:justify-center md:mt-0">
       <FooterIcon href="https://www.facebook.com/Ekolivs/" target="_blank">
         <FacebookSolid
