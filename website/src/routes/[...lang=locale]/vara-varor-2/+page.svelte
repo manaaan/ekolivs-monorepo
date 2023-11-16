@@ -1,14 +1,18 @@
+<script lang="ts">
+  import { t } from '$lib/translations';
+</script>
+
 <svelte-head>
-  <title>Våra varor - Ekolivs</title>
+  <title>{$t('products.title')}</title>
   <meta
     name="description"
-    content="På Ronnebygatans Ekolivs säljer vi ekologiska produkter; obesprutade och utan kemiska tillsatser. Vi prioriterar även att ta in varor från småskaliga producenter i vår närhet."
+    content={$t('products.meta.description')}
   />
   <meta name="robots" content="index, follow" />
 </svelte-head>
 
 <h3 class="text-3xl font-extrabold my-3">
-  Vi bestämmer tillsammans vad som ska stå på våra hyllor
+  {$t('products.header')}
 </h3>
 <p>
   På Ronnebygatans Ekolivs säljer vi ekologiska produkter; obesprutade och utan kemiska tillsatser.

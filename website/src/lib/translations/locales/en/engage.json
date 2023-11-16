@@ -1,0 +1,39 @@
+{
+  "title": "Engagera dig - Ekolivs",
+  "meta": {
+    "description": "Ekolivs drivs ideellt, engagera dig på Ekolivs för att stöda lokale producenter och ekologiska matodling. Medlemmar får rabatt på sina köp."
+  },
+  "section": {
+    "intro": {
+      "header": "Vi driver en ekologisk butik tillsammans - vill du vara med?",
+      "p-1": "Ekolivs drivs helt med ideella krafter. Som aktiv medlem håller en butiken öppen och tillsammans i olika arbetsgrupper sköter vi inköp, ekonomi, skyltning, PR och andra små butiks-sysslor. Vi vill gärna bli fler och vi behöver dig som vill ge av ditt engagemang, energi och kunskap för att göra det möjligt. Men, det är inget måste att engagera sig aktivt i att driva butiken, du kan även vara med endast som stödmedlem och stötta vår verksamhet genom att handla i butiken."
+    },
+    "membership": {
+      "header": "Vad får jag som medlem?",
+      "all": {
+        "header": "Alla medlemmar:",
+        "benefit-1": "Inbjudan till alla medlemsmöten och bli en del av vår härliga gemenskap",
+        "benefit-2": "Rösträtt i kooperativet och vara med och påverka vilka varor vi ska ta in och hur kooperativet ska arbeta"
+      },
+      "active": {
+        "header": "Aktiva medlemmar (Volontärer):",
+        "benefit-1": "15% rabatt på alla köp i butiken.",
+        "benefit-2": "Håller butiken öppen ca två pass i månaden och engagerar dig i en av våra arbetsgrupper"
+      },
+      "passive": {
+        "header": "Stödmedlemmar:",
+        "benefit-1": "5% rabatt på alla köp i butiken"
+      }
+    },
+    "join": {
+      "header": "Såhär enkelt blir du medlem",
+      "interested": {
+        "intro": "Är du intresserad av att engagera dig i Ekolivs och hjälpa till att driva och utveckla butiken? Kul!",
+        "link": "Fyll i formuläret",
+        "end": "eller kom in och prata med oss i butiken."
+      },
+      "continue": "Vi kontaktar dig för och berättar lite mer om hur föreningen fungerar och du får möjlighet att ställa frågor, träffa andra medlemmar och prova att stå i butiken."
+    }
+  },
+  "img-1": "Ekolivs medlemmar framför butiken"
+}

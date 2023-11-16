@@ -1,0 +1,46 @@
+{
+  "title": "Bli medlem - Ekolivs",
+  "meta": {
+    "description": "Bli medlem hos Ekolivs för att stöda vår förening."
+  },
+  "section": {
+    "intro": {
+      "p-1": "Ekolivs drivs helt med ideella krafter. Som aktiv medlem håller du butiken öppen och tillsammans sköter vi inköp, ekonomi, skyltning och PR. Vi vill gärna bli fler och vi behöver dig som vill ge av ditt engagemang, energi och kunskap för att göra det möjligt. Men, det är inget måste att engagera sig aktivt i att driva butiken, du kan även vara med som stödmedlem och stötta vår förening.",
+      "p-2": "När du blir medlem får du rösträtt i föreningen och rabatt i butiken.",
+      "membership": "Mer info om medlemskap",
+      "interested": "Låter det intressant? Ange följande uppgifter nedan så kommer vi att kontakta dig för vidare information om medlemskap och/eller engagemang i Ekolivs."
+    },
+    "form": {
+      "email": {
+        "label": "E-post",
+        "placeholder": "example@ekolivs.se"
+      },
+      "name": {
+        "label": "Namn (för- och efternamn)",
+        "placeholder": "Namn"
+      },
+      "phone": {
+        "label": "Telefonnummer",
+        "placeholder": "012-345678"
+      },
+      "info-1": "Ekolivs är ett kooperativ uppbyggt av medlemmar, därför vill vi gärna ha dig som medlem. Det kostar 100kr/år i medlemsavgift och 200 kr i insats (insatsen har du möjlighet att få tillbaka om du går ur Ekolivs). Betalningsinformationen kommer på nästa sida. När du blir medlem ställer du dig bakom",
+      "info-1-bylaws": "stadgarna för föreningen",
+      "membership": {
+        "label": "Vill du bli medlem i Ekolivs?",
+        "option-y": "Ja",
+        "option-n": "Nej"
+      },
+      "info-2": "Ekolivs drivs helt ideellt och bemannas av medlemmar. Varje pass i butiken är 2-3 timmar långt. Som aktiv medlem bemannar du butiken 2 pass/månad och engagerar dig i en arbetsgrupp. Då får du också engagemangsrabatten.",
+      "active-member": {
+        "label": "Vill du engagera dig aktivt och bemanna butiken?",
+        "option-y": "Ja, kontakta mig med mer information",
+        "option-n": "Nej (stödmedlem)"
+      },
+      "notes": {
+        "label": "Övrig Info",
+        "placeholder": "Om du har nåt till att skriva till oss..."
+      },
+      "submit": "Skicka"
+    }
+  }
+}

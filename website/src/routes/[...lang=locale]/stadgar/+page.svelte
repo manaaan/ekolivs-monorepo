@@ -1,202 +1,172 @@
+<script lang="ts">
+  import { t } from '$lib/translations';
+</script>
+
 <svelte-head>
-  <title>Stadgar - Ekolivs</title>
+  <title>{$t('bylaws.title')}</title>
   <meta
     name="description"
-    content="Stadgar för Ekolivs - Ronnebygatans ekologiska livs och boklåda, ekonomisk förening"
+    content={$t('bylaws.meta.description')}
   />
   <meta name="robots" content="noindex, follow" />
 </svelte-head>
 
 <h3 class="text-3xl font-extrabold my-3">
-  Stadgar för Ekolivs (Ronnebygatans ekologiska livs och boklåda, ekonomisk förening)
+  {$t('bylaws.header')}
 </h3>
 
-<p>Senast reviderade vid årsstämma 2 april 2017.</p>
+<p>{$t('bylaws.p-1')}</p>
 
-<h4 class="text-2xl font-extrabold my-2">§ 1 Firma</h4>
+<h4 class="text-2xl font-extrabold my-2">{$t('bylaws.paragraphs.1.header')}</h4>
 
-<p>Föreningens firma är Ronnebygatans ekologiska livs och boklåda, Ekonomisk Förening.</p>
+<p>{$t('bylaws.paragraphs.1.p-1')}</p>
 
-<h4 class="text-2xl font-extrabold my-2">§ 2 Ändamål</h4>
-
-<p>
-  Föreningen har till ändamål att främja medlemmarnas ekonomiska intresse som konsumenter, genom att
-  gemensamt köpa in ekologiska och närproducerade livsmedel, underlätta rättvisehandel för medlemmar
-  och boende i området Södra innerstaden samt därmed förenlig verksamhet.
-</p>
-
-<h4 class="text-2xl font-extrabold my-2">§ 3 Säte</h4>
-
-<p>Styrelsen har sitt säte i Malmö kommun.</p>
-
-<h4 class="text-2xl font-extrabold my-2">§ 4 Insatser</h4>
+<h4 class="text-2xl font-extrabold my-2">{$t('bylaws.paragraphs.2.header')}</h4>
 
 <p>
-  Insatsen är 200 kr. Insatsen erlägges kontant i butik eller på angivet konto inom tre veckor efter
-  det att medlemskap beviljats.
+  {$t('bylaws.paragraphs.2.p-1')}
 </p>
 
-<h4 class="text-2xl font-extrabold my-2">§ 5 Medlemsavgift</h4>
+<h4 class="text-2xl font-extrabold my-2">{$t('bylaws.paragraphs.3.header')}</h4>
 
-<p>Medlemsavgiften beslutas av föreningsstämman och får vara högst 100 kr.</p>
+<p>{$t('bylaws.paragraphs.3.p-1')}</p>
 
-<h4 class="text-2xl font-extrabold my-2">§ 6 Medlemskap</h4>
+<h4 class="text-2xl font-extrabold my-2">{$t('bylaws.paragraphs.4.header')}</h4>
 
 <p>
-  Till medlemskap kan antas envar som kan ställa sig bakom föreningens ändamål och målsättning.
-  Ansökan om medlemskap kan göras i butiken eller via e-mail.
+  {$t('bylaws.paragraphs.4.p-1')}
 </p>
 
-<h4 class="text-2xl font-extrabold my-2">§ 7 Uteslutning</h4>
+<h4 class="text-2xl font-extrabold my-2">{$t('bylaws.paragraphs.5.header')}</h4>
+
+<p>{$t('bylaws.paragraphs.5.p-1')}</p>
+
+<h4 class="text-2xl font-extrabold my-2">{$t('bylaws.paragraphs.6.header')}</h4>
 
 <p>
-  Medlem som inte fullföljer sina åligganden gentemot föreningen eller på annat sätt skadar eller
-  motarbetar föreningen får uteslutas av styrelsen.
+  {$t('bylaws.paragraphs.6.p-1')}
 </p>
 
-<h4 class="text-2xl font-extrabold my-2">§ 8 Utträde</h4>
+<h4 class="text-2xl font-extrabold my-2">{$t('bylaws.paragraphs.7.header')}</h4>
 
 <p>
-  Anmälan om utträde ur föreningen skall ske skriftligen till styrelsen. Utträde ur föreningen äger
-  rum vid nästkommande styrelsemöte att skriftlig begäran inkommit.
+  {$t('bylaws.paragraphs.7.p-1')}
 </p>
 
-<h4 class="text-2xl font-extrabold my-2">§ 9 Förlust av rösträtt</h4>
+<h4 class="text-2xl font-extrabold my-2">{$t('bylaws.paragraphs.8.header')}</h4>
 
 <p>
-  Medlem som uteslutits eller sagt upp sig till utträde förlorar genast rätten att delta i
-  överläggningar och beslut om föreningens angelägenheter.
+  {$t('bylaws.paragraphs.8.p-1')}
 </p>
 
-<h4 class="text-2xl font-extrabold my-2">§ 10 Återbetalning av insatser</h4>
+<h4 class="text-2xl font-extrabold my-2">{$t('bylaws.paragraphs.9.header')}</h4>
 
 <p>
-  Medlem som lämnat föreningen har rätt att på begäran återfå sin insats enligt 4:e kap i Lagen om
-  ekonomiska föreningar.
+  {$t('bylaws.paragraphs.9.p-1')}
 </p>
 
-<h4 class="text-2xl font-extrabold my-2">§ 11 Styrelse</h4>
+<h4 class="text-2xl font-extrabold my-2">{$t('bylaws.paragraphs.10.header')}</h4>
 
 <p>
-  Styrelsen väljs av föreningsstämman. Styrelsen består av lägst 3 och högst 7 ordinarie ledamöter
-  samt högst 3 suppleanter. Mandatperiod är två år för ordinarie ledamöter. Halva antalet ledamöter
-  väljs årligen. Suppleanter väljs för tiden fram till nästkommande ordinarie stämma.
+  {$t('bylaws.paragraphs.10.p-1')}
 </p>
 
-<h4 class="text-2xl font-extrabold my-2">§ 12 Revisorer</h4>
+<h4 class="text-2xl font-extrabold my-2">{$t('bylaws.paragraphs.11.header')}</h4>
 
 <p>
-  Föreningsstämman utser 1 ordinarie revisor och högst 1 suppleant. Revisorer väljs för tiden fram
-  till nästkommande ordinarie stämma.
+  {$t('bylaws.paragraphs.11.p-1')}
 </p>
 
-<h4 class="text-2xl font-extrabold my-2">§ 13 Firmateckning</h4>
+<h4 class="text-2xl font-extrabold my-2">{$t('bylaws.paragraphs.12.header')}</h4>
 
 <p>
-  Föreningens firma tecknas av styrelsen eller av den eller de som styrelsen utser. Firman tecknas
-  var för sig.
+  {$t('bylaws.paragraphs.12.p-1')}
 </p>
 
-<h4 class="text-2xl font-extrabold my-2">§ 14 Årsredovisning</h4>
+<h4 class="text-2xl font-extrabold my-2">{$t('bylaws.paragraphs.13.header')}</h4>
 
 <p>
-  Styrelsen ska lämna årsredovisningen till revisorerna senast sex veckor före ordinarie
-  föreningsstämma.
+  {$t('bylaws.paragraphs.13.p-1')}
 </p>
 
-<h4 class="text-2xl font-extrabold my-2">§ 15 Räkenskapsår</h4>
+<h4 class="text-2xl font-extrabold my-2">{$t('bylaws.paragraphs.14.header')}</h4>
 
-<p>Föreningens räkenskapsår omfattar 1 januari till 31 december.</p>
+<p>
+  {$t('bylaws.paragraphs.14.p-1')}
+</p>
 
-<h4 class="text-2xl font-extrabold my-2">§ 16 Stämmor</h4>
+<h4 class="text-2xl font-extrabold my-2">{$t('bylaws.paragraphs.15.header')}</h4>
 
-<p>Ordinarie föreningsstämma äger rum före april månads utgång.</p>
+<p>{$t('bylaws.paragraphs.15.p-1')}</p>
 
-<p>Extra stämma skall hållas när:</p>
+<h4 class="text-2xl font-extrabold my-2">{$t('bylaws.paragraphs.16.header')}</h4>
+
+<p>{$t('bylaws.paragraphs.16.p-1')}</p>
+
+<p>{$t('bylaws.paragraphs.16.p-2')}</p>
 
 <ul class="list-disc list-inside">
-  <li>styrelsen anser att det behövs,</li>
-  <li>revisorerna begär det,</li>
-  <li>en tiondel av de röstberättigade begär det.</li>
+  <li>{$t('bylaws.paragraphs.16.list.li-1')}</li>
+  <li>{$t('bylaws.paragraphs.16.list.li-2')}</li>
+  <li>{$t('bylaws.paragraphs.16.list.li-3')}</li>
 </ul>
 
-<h4 class="text-2xl font-extrabold my-2">§ 17 Kallelse till stämmor</h4>
+<h4 class="text-2xl font-extrabold my-2">{$t('bylaws.paragraphs.17.header')}</h4>
 
 <p>
-  Styrelsen kallar till föreningsstämma. Kallelse till föreningsstämma ska innehålla en uppgift om
-  de ärenden som ska förekomma. Kallelsen ska utfärdas tidigast sex veckor före och senast två
-  veckor före föreningsstämman.
+  {$t('bylaws.paragraphs.17.p-1')}
 </p>
 
 <p>
-  Kallelse till föreningsstämma och andra meddelanden sker genom brev med posten eller via e-post
-  till samtliga medlemmar. Då kallelse gått ut till föreningsstämman ska styrelsen omedelbart
-  underrätta revisorerna om detta.
+  {$t('bylaws.paragraphs.17.p-2')}
 </p>
 
-<h4 class="text-2xl font-extrabold my-2">§ 18 Föreningsstämma</h4>
+<h4 class="text-2xl font-extrabold my-2">{$t('bylaws.paragraphs.18.header')}</h4>
 
-<p>På ordinarie föreningsstämma skall följande ärenden förekomma:</p>
+<p>{$t('bylaws.paragraphs.18.p-1')}</p>
 <br />
 <ol class="list-decimal list-inside">
-  <li>Val av ordförande.</li>
-  <li>Val av protokollförare.</li>
-  <li>Fastställande av röstlängd.</li>
-  <li>Val av två protokolljusterare tillika rösträknare.</li>
-  <li>Fastställande av dagordning.</li>
-  <li>Fråga om stämman utlysts i stadgeenlig ordning.</li>
-  <li>Styrelsens årsredovisning av det gångna räkenskapsåret.</li>
-  <li>Revisorernas berättelse.</li>
-  <li>Fastställande av resultat- och balansräkning.</li>
-  <li>Beslut om disposition av föreningens vinst eller förlust.</li>
-  <li>Beslut om ansvarsfrihet för styrelsen.</li>
-  <li>
-    Bestämmande av av ersättning till de medlemmar som deltar aktivt i driften av verksamheten.
-  </li>
-  <li>Fastställande av årsavgift.</li>
-  <li>Fastställande av antal ledamöter i styrelsen.</li>
-  <li>Val av styrelseledamöter och suppleanter.</li>
-  <li>Val av revisor och suppleant.</li>
-  <li>Val av valberedning.</li>
-  <li>
-    Ärenden som av styrelse eller medlem hänskjutits till stämman och som varit styrelsen tillhanda
-    senast en månad innan stämman.
-  </li>
-  <li>Övriga ärenden.</li>
+  <li>{$t('bylaws.paragraphs.18.agenda.1')}</li>
+  <li>{$t('bylaws.paragraphs.18.agenda.2')}</li>
+  <li>{$t('bylaws.paragraphs.18.agenda.3')}</li>
+  <li>{$t('bylaws.paragraphs.18.agenda.4')}</li>
+  <li>{$t('bylaws.paragraphs.18.agenda.5')}</li>
+  <li>{$t('bylaws.paragraphs.18.agenda.6')}</li>
+  <li>{$t('bylaws.paragraphs.18.agenda.7')}</li>
+  <li>{$t('bylaws.paragraphs.18.agenda.8')}</li>
+  <li>{$t('bylaws.paragraphs.18.agenda.9')}</li>
+  <li>{$t('bylaws.paragraphs.18.agenda.10')}</li>
+  <li>{$t('bylaws.paragraphs.18.agenda.11')}</li>
+  <li>{$t('bylaws.paragraphs.18.agenda.12')}</li>
+  <li>{$t('bylaws.paragraphs.18.agenda.13')}</li>
+  <li>{$t('bylaws.paragraphs.18.agenda.14')}</li>
+  <li>{$t('bylaws.paragraphs.18.agenda.15')}</li>
+  <li>{$t('bylaws.paragraphs.18.agenda.16')}</li>
+  <li>{$t('bylaws.paragraphs.18.agenda.17')}</li>
+  <li>{$t('bylaws.paragraphs.18.agenda.18')}</li>
+  <li>{$t('bylaws.paragraphs.18.agenda.19')}</li>
 </ol>
 
-<h4 class="text-2xl font-extrabold my-2">§ 19 Rösträtt</h4>
+<h4 class="text-2xl font-extrabold my-2">{$t('bylaws.paragraphs.19.header')}</h4>
 
-<p>Varje medlem äger en röst.</p>
+<p>{$t('bylaws.paragraphs.19.p-1')}</p>
 
-<h4 class="text-2xl font-extrabold my-2">§ 20 Ärende på stämman</h4>
+<h4 class="text-2xl font-extrabold my-2">{$t('bylaws.paragraphs.20.header')}</h4>
 
-<p>
-  Medlem som vill ha ärende behandlat på föreningsstämma skall skriftligen anmäla detta till
-  styrelsen senast sex veckor innan stämman.
-</p>
+<p>{$t('bylaws.paragraphs.20.p-1')}</p>
 
-<h4 class="text-2xl font-extrabold my-2">§ 21 Stadgeändring</h4>
+<h4 class="text-2xl font-extrabold my-2">{$t('bylaws.paragraphs.21.header')}</h4>
 
-<p>
-  Beträffande stadgeändring gäller vad som föreskrivs i 7 kap, §34 och §35 i Lagen om ekonomiska
-  föreningar (SFS 2016:1336).
-</p>
+<p>{$t('bylaws.paragraphs.21.p-1')}</p>
 
-<h4 class="text-2xl font-extrabold my-2">§ 22 Överskott</h4>
+<h4 class="text-2xl font-extrabold my-2">{$t('bylaws.paragraphs.22.header')}</h4>
 
-<p>
-  Uppkommet överskott skall, sedan i lag föreskriven avsättning till reservfonden skett, avsättas
-  till dispositionsfond.
-</p>
+<p>{$t('bylaws.paragraphs.22.p-1')}</p>
 
-<h4 class="text-2xl font-extrabold my-2">§ 23 Upplösning</h4>
+<h4 class="text-2xl font-extrabold my-2">{$t('bylaws.paragraphs.23.header')}</h4>
 
-<p>
-  Vid föreningens upplösning skall behållna tillgångar efter det att medlemmarna fått tillbaka sina
-  insatser, delas lika mellan medlemmarna.
-</p>
+<p>{$t('bylaws.paragraphs.23.p-1')}</p>
 
-<h4 class="text-2xl font-extrabold my-2">§ 24 Övrigt</h4>
+<h4 class="text-2xl font-extrabold my-2">{$t('bylaws.paragraphs.24.header')}</h4>
 
-<p>I övrigt gäller reglerna i Lagen om ekonomiska föreningar, 1987:667.</p>
+<p>{$t('bylaws.paragraphs.24.p-1')}</p>

@@ -1,0 +1,134 @@
+{
+  "title": "Stadgar - Ekolivs",
+  "meta": {
+    "description": "Stadgar för Ekolivs - Ronnebygatans ekologiska livs och boklåda, ekonomisk förening"
+  },
+  "header": "Stadgar för Ekolivs (Ronnebygatans ekologiska livs och boklåda, ekonomisk förening)",
+  "p-1": "Senast reviderade vid årsstämma 2 april 2017.",
+  "paragraphs": {
+    "1": {
+      "header": "§ 1 Firma",
+      "p-1": "Föreningens firma är Ronnebygatans ekologiska livs och boklåda, Ekonomisk Förening."
+    },
+    "2": {
+      "header": "§ 2 Ändamål",
+      "p-1": "Föreningen har till ändamål att främja medlemmarnas ekonomiska intresse som konsumenter, genom att gemensamt köpa in ekologiska och närproducerade livsmedel, underlätta rättvisehandel för medlemmar och boende i området Södra innerstaden samt därmed förenlig verksamhet."
+    },
+    "3": {
+      "header": "§ 3 Säte",
+      "p-1": "Styrelsen har sitt säte i Malmö kommun."
+    },
+    "4": {
+      "header": "§ 4 Insatser",
+      "p-1": "Insatsen är 200 kr. Insatsen erlägges kontant i butik eller på angivet konto inom tre veckor efter det att medlemskap beviljats."
+    },
+    "5": {
+      "header": "§ 5 Medlemsavgift",
+      "p-1": "Medlemsavgiften beslutas av föreningsstämman och får vara högst 100 kr."
+    },
+    "6": {
+      "header": "§ 6 Medlemskap",
+      "p-1": "Till medlemskap kan antas envar som kan ställa sig bakom föreningens ändamål och målsättning. Ansökan om medlemskap kan göras i butiken eller via e-mail."
+    },
+    "7": {
+      "header": "§ 7 Uteslutning",
+      "p-1": "Medlem som inte fullföljer sina åligganden gentemot föreningen eller på annat sätt skadar eller motarbetar föreningen får uteslutas av styrelsen."
+    },
+    "8": {
+      "header": "§ 8 Utträde",
+      "p-1": "Anmälan om utträde ur föreningen skall ske skriftligen till styrelsen. Utträde ur föreningen äger rum vid nästkommande styrelsemöte att skriftlig begäran inkommit."
+    },
+    "9": {
+      "header": "§ 9 Förlust av rösträtt",
+      "p-1": "Medlem som uteslutits eller sagt upp sig till utträde förlorar genast rätten att delta i överläggningar och beslut om föreningens angelägenheter."
+    },
+    "10": {
+      "header": "§ 10 Återbetalning av insatser",
+      "p-1": "Medlem som lämnat föreningen har rätt att på begäran återfå sin insats enligt 4:e kap i Lagen om ekonomiska föreningar."
+    },
+    "11": {
+      "header": "§ 11 Styrelse",
+      "p-1": "Styrelsen väljs av föreningsstämman. Styrelsen består av lägst 3 och högst 7 ordinarie ledamöter samt högst 3 suppleanter. Mandatperiod är två år för ordinarie ledamöter. Halva antalet ledamöter väljs årligen. Suppleanter väljs för tiden fram till nästkommande ordinarie stämma."
+    },
+    "12": {
+      "header": "§ 12 Revisorer",
+      "p-1": "Föreningsstämman utser 1 ordinarie revisor och högst 1 suppleant. Revisorer väljs för tiden fram till nästkommande ordinarie stämma."
+    },
+    "13": {
+      "header": "§ 13 Firmateckning",
+      "p-1": "Föreningens firma tecknas av styrelsen eller av den eller de som styrelsen utser. Firman tecknas var för sig."
+    },
+    "14": {
+      "header": "§ 14 Årsredovisning",
+      "p-1": "Styrelsen ska lämna årsredovisningen till revisorerna senast sex veckor före ordinarie föreningsstämma."
+    },
+    "15": {
+      "header": "§ 15 Räkenskapsår",
+      "p-1": "Föreningens räkenskapsår omfattar 1 januari till 31 december."
+    },
+    "16": {
+      "header": "§ 16 Stämmor",
+      "p-1": "Ordinarie föreningsstämma äger rum före april månads utgång.",
+      "p-2": "Extra stämma skall hållas när:",
+      "list": {
+        "li-1": "styrelsen anser att det behövs,",
+        "li-2": "revisorerna begär det,",
+        "li-3": "en tiondel av de röstberättigade begär det."
+      }
+    },
+    "17": {
+      "header": "§ 17 Kallelse till stämmor",
+      "p-1": "Styrelsen kallar till föreningsstämma. Kallelse till föreningsstämma ska innehålla en uppgift om de ärenden som ska förekomma. Kallelsen ska utfärdas tidigast sex veckor före och senast två veckor före föreningsstämman.",
+      "p-2": "Kallelse till föreningsstämma och andra meddelanden sker genom brev med posten eller via e-post till samtliga medlemmar. Då kallelse gått ut till föreningsstämman ska styrelsen omedelbart underrätta revisorerna om detta."
+    },
+    "18": {
+      "header": "§ 18 Föreningsstämma",
+      "p-1": "På ordinarie föreningsstämma skall följande ärenden förekomma:",
+      "agenda": {
+        "1": "Val av ordförande.",
+        "2": "Val av protokollförare.",
+        "3": "Fastställande av röstlängd.",
+        "4": "Val av två protokolljusterare tillika rösträknare.",
+        "5": "Fastställande av dagordning.",
+        "6": "Fråga om stämman utlysts i stadgeenlig ordning.",
+        "7": "Styrelsens årsredovisning av det gångna räkenskapsåret.",
+        "8": "Revisorernas berättelse.",
+        "9": "Fastställande av resultat- och balansräkning.",
+        "10": "Beslut om disposition av föreningens vinst eller förlust.",
+        "11": "Beslut om ansvarsfrihet för styrelsen.",
+        "12": "Bestämmande av av ersättning till de medlemmar som deltar aktivt i driften av verksamheten.",
+        "13": "Fastställande av årsavgift.",
+        "14": "Fastställande av antal ledamöter i styrelsen.",
+        "15": "Val av styrelseledamöter och suppleanter.",
+        "16": "Val av revisor och suppleant.",
+        "17": "Val av valberedning.",
+        "18": "Ärenden som av styrelse eller medlem hänskjutits till stämman och som varit styrelsen tillhanda senast en månad innan stämman.",
+        "19": "Övriga ärenden."
+      }
+    },
+    "19": {
+      "header": "§ 19 Rösträtt",
+      "p-1": "Varje medlem äger en röst."
+    },
+    "20": {
+      "header": "§ 20 Ärende på stämman",
+      "p-1": "Medlem som vill ha ärende behandlat på föreningsstämma skall skriftligen anmäla detta till styrelsen senast sex veckor innan stämman."
+    },
+    "21": {
+      "header": "§ 21 Stadgeändring",
+      "p-1": "Beträffande stadgeändring gäller vad som föreskrivs i 7 kap, §34 och §35 i Lagen om ekonomiska föreningar (SFS 2016:1336)."
+    },
+    "22": {
+      "header": "§ 22 Överskott",
+      "p-1": "Uppkommet överskott skall, sedan i lag föreskriven avsättning till reservfonden skett, avsättas till dispositionsfond."
+    },
+    "23": {
+      "header": "§ 23 Upplösning",
+      "p-1": "Vid föreningens upplösning skall behållna tillgångar efter det att medlemmarna fått tillbaka sina insatser, delas lika mellan medlemmarna."
+    },
+    "24": {
+      "header": "§ 24 Övrigt",
+      "p-1": "I övrigt gäller reglerna i Lagen om ekonomiska föreningar, 1987:667."
+    }
+  }
+}

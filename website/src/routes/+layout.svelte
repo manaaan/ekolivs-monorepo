@@ -46,11 +46,11 @@
     />
     <NavHamburger />
     <NavUl>
-      <NavLi href="/">Hem</NavLi>
-      <NavLi href="/vara-varor-2">Våra Varor</NavLi>
-      <NavLi href="/om-ekolivs-2">Om Ekolivs</NavLi>
-      <NavLi href="/engagera-dig">Engagera dig</NavLi>
-      <NavLi href="/kontakt">Hitta hit</NavLi>
+      <NavLi href={`/${langSelected}`}>Hem</NavLi>
+      <NavLi href={`/${langSelected}/vara-varor-2`}>Våra Varor</NavLi>
+      <NavLi href={`/${langSelected}/om-ekolivs-2`}>Om Ekolivs</NavLi>
+      <NavLi href={`/${langSelected}/engagera-dig`}>Engagera dig</NavLi>
+      <NavLi href={`/${langSelected}/kontakt`}>Hitta hit</NavLi>
     </NavUl>
   </Navbar>
 
@@ -67,17 +67,17 @@
     <div>
       <h2 class="mb-6 text-sm font-semibold text-gray dark:text-gray-100 uppercase">Ekolivs</h2>
       <FooterLinkGroup ulClass="text-gray-900 dark:text-gray-200">
-        <FooterLink liClass="mb-4" href="/vara-varor-2">Våra Varor</FooterLink>
-        <FooterLink liClass="mb-4" href="/om-ekolivs-2">Om Ekolivs</FooterLink>
-        <FooterLink liClass="mb-4" href="/kontakt">Hitta hit</FooterLink>
+        <FooterLink liClass="mb-4" href={`/${langSelected}/vara-varor-2`}>Våra Varor</FooterLink>
+        <FooterLink liClass="mb-4" href={`/${langSelected}/om-ekolivs-2`}>Om Ekolivs</FooterLink>
+        <FooterLink liClass="mb-4" href={`/${langSelected}/kontakt`}>Hitta hit</FooterLink>
       </FooterLinkGroup>
     </div>
     <div>
       <h2 class="mb-6 text-sm font-semibold uppercase text-gray dark:text-gray-100">Medlemskap</h2>
       <FooterLinkGroup ulClass="text-gray-900 dark:text-gray-200">
-        <FooterLink liClass="mb-4" href="/stadgar">Våra stadgar</FooterLink>
-        <FooterLink liClass="mb-4" href="/engagera-dig">Engagera dig i Ekolivs</FooterLink>
-        <FooterLink liClass="mb-4" href="/bli-medlem">Bli medlem</FooterLink>
+        <FooterLink liClass="mb-4" href={`/${langSelected}/stadgar`}>Våra stadgar</FooterLink>
+        <FooterLink liClass="mb-4" href={`/${langSelected}/engagera-dig`}>Engagera dig i Ekolivs</FooterLink>
+        <FooterLink liClass="mb-4" href={`/${langSelected}/bli-medlem`}>Bli medlem</FooterLink>
       </FooterLinkGroup>
     </div>
     <div>
@@ -91,7 +91,6 @@
       <div>
         <p>Ronnebygatan 1</p>
         <p>211 58 Malmö</p>
-        n/undefined/undefined/
         <br />
         <p>info@ekolivs.se</p>
         <p>Tel: +46 736-10 18 90</p>
