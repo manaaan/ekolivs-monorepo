@@ -16,13 +16,13 @@ export const config: config = {
   loaders: [
     {
       locale: 'en',
-      key: 'navbar',
-      loader: async () => (await import('./locales/en/navbar.json')).default
+      key: 'navigation',
+      loader: async () => (await import('./locales/en/navigation.json')).default
     },
     {
       locale: 'sv',
-      key: 'navbar',
-      loader: async () => (await import('./locales/sv/navbar.json')).default
+      key: 'navigation',
+      loader: async () => (await import('./locales/sv/navigation.json')).default
     },
     {
       locale: 'en',

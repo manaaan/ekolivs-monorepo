@@ -46,11 +46,11 @@
     />
     <NavHamburger />
     <NavUl>
-      <NavLi href={`/${langSelected}`}>{$t('navbar.home')}</NavLi>
-      <NavLi href={`/${langSelected}/vara-varor-2`}>{$t('navbar.products')}</NavLi>
-      <NavLi href={`/${langSelected}/om-ekolivs-2`}>{$t('navbar.about')}</NavLi>
-      <NavLi href={`/${langSelected}/engagera-dig`}>{$t('navbar.engage')}</NavLi>
-      <NavLi href={`/${langSelected}/kontakt`}>{$t('navbar.contact')}</NavLi>
+      <NavLi href={`/${langSelected}`}>{$t('navigation.home')}</NavLi>
+      <NavLi href={`/${langSelected}/vara-varor-2`}>{$t('navigation.products')}</NavLi>
+      <NavLi href={`/${langSelected}/om-ekolivs-2`}>{$t('navigation.about')}</NavLi>
+      <NavLi href={`/${langSelected}/engagera-dig`}>{$t('navigation.engage')}</NavLi>
+      <NavLi href={`/${langSelected}/kontakt`}>{$t('navigation.contact')}</NavLi>
     </NavUl>
   </Navbar>
 
