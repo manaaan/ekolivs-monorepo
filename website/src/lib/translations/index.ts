@@ -5,7 +5,7 @@ import lang from './lang.json';
 
 export const defaultLocale = 'sv';
 
-export const config: Config = {
+export const config: config = {
   log: {
     level: dev ? 'warn' : 'error'
   },
@@ -14,6 +14,16 @@ export const config: Config = {
     sv: { lang }
   },
   loaders: [
+    {
+      locale: 'en',
+      key: 'navbar',
+      loader: async () => (await import('./locales/en/navbar.json')).default
+    },
+    {
+      locale: 'sv',
+      key: 'navbar',
+      loader: async () => (await import('./locales/sv/navbar.json')).default
+    },
     {
       locale: 'en',
       key: 'home',
