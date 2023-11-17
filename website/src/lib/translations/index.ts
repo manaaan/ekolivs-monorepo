@@ -5,7 +5,7 @@ import lang from './lang.json';
 
 export const defaultLocale = 'sv';
 
-export const config: config = {
+export const config: Config = {
   log: {
     level: dev ? 'warn' : 'error'
   },
