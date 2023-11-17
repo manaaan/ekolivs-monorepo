@@ -30,7 +30,9 @@
 <p>{$t('member.section.intro.p-2')}</p>
 <br />
 <p>
-  <a href={`/${$locale}/engagera-dig`} class="text-primary-500 hover:text-primary-300">{$t('member.section.intro.membership')}</a>
+  <a href={`/${$locale}/engagera-dig`} class="text-primary-500 hover:text-primary-300"
+    >{$t('member.section.intro.membership')}</a
+  >
 </p>
 <br />
 <p>
@@ -40,7 +42,12 @@
 <form class="grid gap-4 mb-20">
   <div class="mb-2">
     <Label for="email" class="block mb-2">{$t('member.section.form.email.label')}</Label>
-    <Input id="email" placeholder={$t('member.section.form.email.placeholder')} type="email" required>
+    <Input
+      id="email"
+      placeholder={$t('member.section.form.email.placeholder')}
+      type="email"
+      required
+    >
       <EnvelopeSolid slot="left" class="w-5 h-5 text-gray-500 dark:text-gray-400" />
     </Input>
   </div>
@@ -60,16 +67,22 @@
   <p class="leading-tight">
     <InfoCircleOutline class="float-left mr-2" />
     {$t('member.section.form.info-1')}
-    <a href="/stadgar" class="text-primary-500 hover:text-primary-300">{$t('member.section.form.info-1-bylaws')}</a>.
+    <a href="/stadgar" class="text-primary-500 hover:text-primary-300"
+      >{$t('member.section.form.info-1-bylaws')}</a
+    >.
   </p>
 
   <Label for="wantMembership">{$t('member.section.form.membership.label')}</Label>
   <div class="grid grid-cols-2 gap-6">
     <div class="rounded border border-gray-200 dark:border-gray-700">
-      <Radio name="wantMembership" class="w-full p-4">{$t('member.section.form.membership.option-y')}</Radio>
+      <Radio name="wantMembership" class="w-full p-4"
+        >{$t('member.section.form.membership.option-y')}</Radio
+      >
     </div>
     <div class="rounded border border-gray-200 dark:border-gray-700">
-      <Radio name="wantMembership" class="w-full p-4">{$t('member.section.form.membership.option-n')}</Radio>
+      <Radio name="wantMembership" class="w-full p-4"
+        >{$t('member.section.form.membership.option-n')}</Radio
+      >
     </div>
   </div>
   <p class="leading-tight">
@@ -80,10 +93,14 @@
   <Label for="activeMember">{$t('member.section.form.active-member.label')}</Label>
   <div class="grid grid-cols-2 gap-6">
     <div class="rounded border border-gray-200 dark:border-gray-700">
-      <Radio name="activeMember" class="w-full p-4">{$t('member.section.form.active-member.option-y')}</Radio>
+      <Radio name="activeMember" class="w-full p-4"
+        >{$t('member.section.form.active-member.option-y')}</Radio
+      >
     </div>
     <div class="rounded border border-gray-200 dark:border-gray-700">
-      <Radio name="activeMember" class="w-full p-4">{$t('member.section.form.active-member.option-n')}</Radio>
+      <Radio name="activeMember" class="w-full p-4"
+        >{$t('member.section.form.active-member.option-n')}</Radio
+      >
     </div>
   </div>
 

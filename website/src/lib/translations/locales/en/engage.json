@@ -1,39 +1,39 @@
 {
-  "title": "Engagera dig - Ekolivs",
+  "title": "Join us - Ekolivs",
   "meta": {
-    "description": "Ekolivs drivs ideellt, engagera dig på Ekolivs för att stöda lokale producenter och ekologiska matodling. Medlemmar får rabatt på sina köp."
+    "description": "Ekolivs is run voluntarily. Engage with Ekolivs to support local producers and organic farming. Members get a discount on their purchases."
   },
   "section": {
     "intro": {
-      "header": "Vi driver en ekologisk butik tillsammans - vill du vara med?",
-      "p-1": "Ekolivs drivs helt med ideella krafter. Som aktiv medlem håller en butiken öppen och tillsammans i olika arbetsgrupper sköter vi inköp, ekonomi, skyltning, PR och andra små butiks-sysslor. Vi vill gärna bli fler och vi behöver dig som vill ge av ditt engagemang, energi och kunskap för att göra det möjligt. Men, det är inget måste att engagera sig aktivt i att driva butiken, du kan även vara med endast som stödmedlem och stötta vår verksamhet genom att handla i butiken."
+      "header": "We run an store together - do you want to be part of it?",
+      "p-1": "Ekolivs is run entirely by volunteers. As an active member, you keep the store open and together with various workgroups, we manage purchases, economy, signage, PR and other small store tasks. We want to get more members and we need you who want to give your engagement, energy, and knowledge to make it possible. But, it is not a must to actively engage in running the store, you can also be a support member and support our operations by shopping in the store."
     },
     "membership": {
-      "header": "Vad får jag som medlem?",
+      "header": "What do I get as a member?",
       "all": {
-        "header": "Alla medlemmar:",
-        "benefit-1": "Inbjudan till alla medlemsmöten och bli en del av vår härliga gemenskap",
-        "benefit-2": "Rösträtt i kooperativet och vara med och påverka vilka varor vi ska ta in och hur kooperativet ska arbeta"
+        "header": "All members:",
+        "benefit-1": "Invitation to all member meetings and become part of our wonderful community",
+        "benefit-2": "Voting rights in the cooperative and participate in deciding which products we should sell and how the cooperative should work"
       },
       "active": {
-        "header": "Aktiva medlemmar (Volontärer):",
-        "benefit-1": "15% rabatt på alla köp i butiken.",
-        "benefit-2": "Håller butiken öppen ca två pass i månaden och engagerar dig i en av våra arbetsgrupper"
+        "header": "Active members (Volunteers):",
+        "benefit-1": "15% discount on all purchases in the store.",
+        "benefit-2": "Keeps the store open approximately two shifts per month and engages in one of our workgroups"
       },
       "passive": {
-        "header": "Stödmedlemmar:",
-        "benefit-1": "5% rabatt på alla köp i butiken"
+        "header": "Support members:",
+        "benefit-1": "5% discount on all purchases in the store"
       }
     },
     "join": {
-      "header": "Såhär enkelt blir du medlem",
+      "header": "Come join us!",
       "interested": {
-        "intro": "Är du intresserad av att engagera dig i Ekolivs och hjälpa till att driva och utveckla butiken? Kul!",
-        "link": "Fyll i formuläret",
-        "end": "eller kom in och prata med oss i butiken."
+        "intro": "Are you interested in engaging with Ekolivs and help run and develop the store? Cool!",
+        "link": "Fill out the form",
+        "end": "or come in and talk to us in the store."
       },
-      "continue": "Vi kontaktar dig för och berättar lite mer om hur föreningen fungerar och du får möjlighet att ställa frågor, träffa andra medlemmar och prova att stå i butiken."
+      "continue": "We'll contact you and tell you a bit more about how we organize things, and you get the chance to ask questions, meet other members and learn how everything works in the store."
     }
   },
-  "img-1": "Ekolivs medlemmar framför butiken"
+  "img-1": "Ekolivs members in front of the store"
 }

@@ -76,7 +76,9 @@
       <h2 class="mb-6 text-sm font-semibold uppercase text-gray dark:text-gray-100">Medlemskap</h2>
       <FooterLinkGroup ulClass="text-gray-900 dark:text-gray-200">
         <FooterLink liClass="mb-4" href={`/${langSelected}/stadgar`}>Våra stadgar</FooterLink>
-        <FooterLink liClass="mb-4" href={`/${langSelected}/engagera-dig`}>Engagera dig i Ekolivs</FooterLink>
+        <FooterLink liClass="mb-4" href={`/${langSelected}/engagera-dig`}
+          >Engagera dig i Ekolivs</FooterLink
+        >
         <FooterLink liClass="mb-4" href={`/${langSelected}/bli-medlem`}>Bli medlem</FooterLink>
       </FooterLinkGroup>
     </div>

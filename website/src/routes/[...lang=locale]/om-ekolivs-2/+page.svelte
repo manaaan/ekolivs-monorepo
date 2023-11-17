@@ -13,10 +13,7 @@
 
 <svelte-head>
   <title>{$t('about.title')}</title>
-  <meta
-    name="description"
-    content={$t('about.meta.description')}
-  />
+  <meta name="description" content={$t('about.meta.description')} />
   <meta name="robots" content="index, follow" />
 </svelte-head>
 
@@ -32,13 +29,25 @@
 <br />
 <ul class="list-disc list-inside">
   <li>
-    <b>{$t('about.section.general.groups.buying.name')}</b> - {$t('about.section.general.groups.buying.desc')}
+    <b>{$t('about.section.general.groups.buying.name')}</b> - {$t(
+      'about.section.general.groups.buying.desc'
+    )}
   </li>
-  <li><b>{$t('about.section.general.groups.economy.name')}</b> - {$t('about.section.general.groups.economy.desc')}</li>
   <li>
-    <b>{$t('about.section.general.groups.pr.name')}</b> - {$t('about.section.general.groups.pr.desc')}
+    <b>{$t('about.section.general.groups.economy.name')}</b> - {$t(
+      'about.section.general.groups.economy.desc'
+    )}
   </li>
-  <li><b>{$t('about.section.general.groups.store.name')}</b> - {$t('about.section.general.groups.store.desc')}</li>
+  <li>
+    <b>{$t('about.section.general.groups.pr.name')}</b> - {$t(
+      'about.section.general.groups.pr.desc'
+    )}
+  </li>
+  <li>
+    <b>{$t('about.section.general.groups.store.name')}</b> - {$t(
+      'about.section.general.groups.store.desc'
+    )}
+  </li>
 </ul>
 <br />
 <p>
@@ -48,9 +57,8 @@
 <h3 class="text-3xl font-extrabold my-3">{$t('about.section.join.header')}</h3>
 
 <p>
-  {$t('about.section.join.p-1.intro')} <a
-    href={`/${$locale}/engagera-dig`}
-    class="text-primary-500 hover:text-primary-300"
+  {$t('about.section.join.p-1.intro')}
+  <a href={`/${$locale}/engagera-dig`} class="text-primary-500 hover:text-primary-300"
     >{$t('about.section.join.p-1.link')}</a
   >{$t('about.section.join.p-1.end')}
 </p>

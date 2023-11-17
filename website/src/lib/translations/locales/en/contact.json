@@ -5,13 +5,13 @@
   },
   "section": {
     "wayfinding": {
-      "header": "Välkommen in till vår ekologiska lilla butik på hörnet",
-      "p-1": "Butiken ligger på Ronnebygatan 1 i Malmö och Ronnebygatan hittar du intill Folkets park i det mysiga området St: Knut. På busshållplats Malmö Folkets park, ett stenkast från butiken, stannar buss nr 5 och 32. Vid Folkets park finns även en parkeringsstation för hyrcyklarna",
+      "header": "Welcome to our little organic store on the corner",
+      "p-1": "The store is located at Ronnebygatan 1 in Malmö. Ronnebygatan can be found next to Folkets park in the charming area of St: Knut. At the bus stop Malmö Folkets Park, a stone's throw from the store, buses number 5 and 32 stop. At Folkets Park, there is also a bicycle parking station",
       "p-1-link": "Malmö by bike",
-      "google-maps": "Karta till butiken - Google Maps",
-      "osm": "Karta till butiken - Open Street Map",
-      "p-2": ".. och såhär fint ser det ut om du hamnat rätt:",
-      "bild": "Bild av Ekolivs butiken på säljs event med många kunder framför butiken"
+      "google-maps": "Map showing the location of Ekolivs - Google Maps",
+      "osm": "Map showing the location of Ekolivs - Open Street Map",
+      "p-2": ".. and this is how it looks when you've arrived:",
+      "bild": "Image of Ekolivs store at a sales event with many customers in front of the store"
     }
   }
 }

@@ -4,10 +4,7 @@
 
 <svelte-head>
   <title>{$t('products.title')}</title>
-  <meta
-    name="description"
-    content={$t('products.meta.description')}
-  />
+  <meta name="description" content={$t('products.meta.description')} />
   <meta name="robots" content="index, follow" />
 </svelte-head>
 

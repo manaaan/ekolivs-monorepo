@@ -4,10 +4,7 @@
 
 <svelte-head>
   <title>{$t('bylaws.title')}</title>
-  <meta
-    name="description"
-    content={$t('bylaws.meta.description')}
-  />
+  <meta name="description" content={$t('bylaws.meta.description')} />
   <meta name="robots" content="noindex, follow" />
 </svelte-head>
 

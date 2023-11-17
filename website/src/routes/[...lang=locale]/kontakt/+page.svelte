@@ -12,7 +12,8 @@
 <h3 class="text-3xl font-extrabold my-3">{$t('contact.section.wayfinding.header')}</h3>
 
 <p>
-  {$t('contact.section.wayfinding.p-1')} <a
+  {$t('contact.section.wayfinding.p-1')}
+  <a
     target="_blank"
     href="https://www.malmobybike.se/"
     class="text-primary-500 hover:text-primary-300">{$t('contact.section.wayfinding.p-1-link')}</a
@@ -23,7 +24,8 @@
   <a
     target="_blank"
     href="https://goo.gl/maps/8ejzpE1XwZ72"
-    class="text-primary-500 hover:text-primary-300">{$t('contact.section.wayfinding.google-maps')}</a
+    class="text-primary-500 hover:text-primary-300"
+    >{$t('contact.section.wayfinding.google-maps')}</a
   >
 </p>
 <p>
@@ -36,8 +38,4 @@
 <br />
 <p>{$t('contact.section.wayfinding.p-2')}</p>
 
-<Img
-  src="/hitta-hit-1.webp"
-  alt={$t('contact.section.wayfinding.bild')}
-  imgClass="my-4"
-/>
+<Img src="/hitta-hit-1.webp" alt={$t('contact.section.wayfinding.bild')} imgClass="my-4" />

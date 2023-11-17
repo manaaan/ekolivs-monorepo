@@ -1,46 +1,46 @@
 {
-  "title": "Bli medlem - Ekolivs",
+  "title": "Become a member - Ekolivs",
   "meta": {
-    "description": "Bli medlem hos Ekolivs för att stöda vår förening."
+    "description": "Become a member of Ekolivs to support our association."
   },
   "section": {
     "intro": {
-      "p-1": "Ekolivs drivs helt med ideella krafter. Som aktiv medlem håller du butiken öppen och tillsammans sköter vi inköp, ekonomi, skyltning och PR. Vi vill gärna bli fler och vi behöver dig som vill ge av ditt engagemang, energi och kunskap för att göra det möjligt. Men, det är inget måste att engagera sig aktivt i att driva butiken, du kan även vara med som stödmedlem och stötta vår förening.",
-      "p-2": "När du blir medlem får du rösträtt i föreningen och rabatt i butiken.",
-      "membership": "Mer info om medlemskap",
-      "interested": "Låter det intressant? Ange följande uppgifter nedan så kommer vi att kontakta dig för vidare information om medlemskap och/eller engagemang i Ekolivs."
+      "p-1": "Ekolivs is run entirely by volunteers. As an active member, you help keep the store open and we handle purchases, finances, signage, and PR together. We are always welcoming new members, and we need you if you want to contribute your commitment, energy, and knowledge to make it possible. However, it is not a requirement to actively run the store, you can also be a supporting member and support our association.",
+      "p-2": "When you become a member, you get voting rights in the association and a discount in the store.",
+      "membership": "More information about membership",
+      "interested": "Interested? Enter your info below and we will contact you for more information about membership and/or engagement in Ekolivs."
     },
     "form": {
       "email": {
-        "label": "E-post",
+        "label": "Email",
         "placeholder": "example@ekolivs.se"
       },
       "name": {
-        "label": "Namn (för- och efternamn)",
-        "placeholder": "Namn"
+        "label": "Name (first and last name)",
+        "placeholder": "Name"
       },
       "phone": {
-        "label": "Telefonnummer",
+        "label": "Phone number",
         "placeholder": "012-345678"
       },
-      "info-1": "Ekolivs är ett kooperativ uppbyggt av medlemmar, därför vill vi gärna ha dig som medlem. Det kostar 100kr/år i medlemsavgift och 200 kr i insats (insatsen har du möjlighet att få tillbaka om du går ur Ekolivs). Betalningsinformationen kommer på nästa sida. När du blir medlem ställer du dig bakom",
-      "info-1-bylaws": "stadgarna för föreningen",
+      "info-1": "Ekolivs is a cooperative built by members, so we would like to have you as a member. It costs 100 SEK/year in membership fees and 200 SEK in stake (you have the opportunity to get your this back if you leave Ekolivs). Payment information will be on the next page. When you become a member, you support",
+      "info-1-bylaws": "the statutes of the association (in Swedish)",
       "membership": {
-        "label": "Vill du bli medlem i Ekolivs?",
-        "option-y": "Ja",
-        "option-n": "Nej"
+        "label": "Do you want to become a member of Ekolivs?",
+        "option-y": "Yes",
+        "option-n": "No"
       },
-      "info-2": "Ekolivs drivs helt ideellt och bemannas av medlemmar. Varje pass i butiken är 2-3 timmar långt. Som aktiv medlem bemannar du butiken 2 pass/månad och engagerar dig i en arbetsgrupp. Då får du också engagemangsrabatten.",
+      "info-2": "Ekolivs is run entirely by volunteers and staffed by members. Each shift in the store is 2-3 hours long. As an active member, you staff the store 2 shifts/month and engage in a workgroup. Then you also get the engagement discount.",
       "active-member": {
-        "label": "Vill du engagera dig aktivt och bemanna butiken?",
-        "option-y": "Ja, kontakta mig med mer information",
-        "option-n": "Nej (stödmedlem)"
+        "label": "Do you want to engage actively and staff the store?",
+        "option-y": "Yes, contact me with more information",
+        "option-n": "No, I would like to join as a passive member"
       },
       "notes": {
-        "label": "Övrig Info",
-        "placeholder": "Om du har nåt till att skriva till oss..."
+        "label": "Other Info",
+        "placeholder": "If you have something to write to us..."
       },
-      "submit": "Skicka"
+      "submit": "Submit"
     }
   }
 }

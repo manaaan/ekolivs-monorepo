@@ -5,10 +5,7 @@
 
 <svelte-head>
   <title>{$t('engage.title')}</title>
-  <meta
-    name="description"
-    content={$t('engage.meta.description')}
-  />
+  <meta name="description" content={$t('engage.meta.description')} />
   <meta name="robots" content="index, follow" />
 </svelte-head>
 
@@ -53,7 +50,11 @@
 <h4 class="text-2xl font-extrabold my-2">{$t('engage.section.join.header')}</h4>
 
 <p>
-  {$t('engage.section.join.interested.intro')} <a href={`/${$locale}/bli-medlem`} class="text-primary-500 hover:text-primary-300">{$t('engage.section.join.interested.link')}</a> {$t('engage.section.join.interested.end')}
+  {$t('engage.section.join.interested.intro')}
+  <a href={`/${$locale}/bli-medlem`} class="text-primary-500 hover:text-primary-300"
+    >{$t('engage.section.join.interested.link')}</a
+  >
+  {$t('engage.section.join.interested.end')}
 </p>
 
 <p>
