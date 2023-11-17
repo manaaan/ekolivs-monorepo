@@ -107,6 +107,16 @@ export const config: config = {
       key: 'products',
       routes: ['/vara-varor-2'],
       loader: async () => (await import('./locales/sv/products.json')).default
+    },
+    {
+      locale: 'en',
+      key: 'footer',
+      loader: async () => (await import('./locales/en/footer.json')).default
+    },
+    {
+      locale: 'sv',
+      key: 'footer',
+      loader: async () => (await import('./locales/sv/footer.json')).default
     }
   ]
 };

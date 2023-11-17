@@ -67,29 +67,29 @@
     <div>
       <h2 class="mb-6 text-sm font-semibold text-gray dark:text-gray-100 uppercase">Ekolivs</h2>
       <FooterLinkGroup ulClass="text-gray-900 dark:text-gray-200">
-        <FooterLink liClass="mb-4" href={`/${langSelected}/vara-varor-2`}>Våra Varor</FooterLink>
-        <FooterLink liClass="mb-4" href={`/${langSelected}/om-ekolivs-2`}>Om Ekolivs</FooterLink>
-        <FooterLink liClass="mb-4" href={`/${langSelected}/kontakt`}>Hitta hit</FooterLink>
+        <FooterLink liClass="mb-4" href={`/${langSelected}/vara-varor-2`}>{$t('navigation.products')}</FooterLink>
+        <FooterLink liClass="mb-4" href={`/${langSelected}/om-ekolivs-2`}>{$t('navigation.about')}</FooterLink>
+        <FooterLink liClass="mb-4" href={`/${langSelected}/kontakt`}>{$t('navigation.contact')}</FooterLink>
       </FooterLinkGroup>
     </div>
     <div>
-      <h2 class="mb-6 text-sm font-semibold uppercase text-gray dark:text-gray-100">Medlemskap</h2>
+      <h2 class="mb-6 text-sm font-semibold uppercase text-gray dark:text-gray-100">{$t('footer.membership')}</h2>
       <FooterLinkGroup ulClass="text-gray-900 dark:text-gray-200">
-        <FooterLink liClass="mb-4" href={`/${langSelected}/stadgar`}>Våra stadgar</FooterLink>
+        <FooterLink liClass="mb-4" href={`/${langSelected}/stadgar`}>{$t('navigation.bylaws')}</FooterLink>
         <FooterLink liClass="mb-4" href={`/${langSelected}/engagera-dig`}
-          >Engagera dig i Ekolivs</FooterLink
+          >{$t('navigation.engage')}</FooterLink
         >
-        <FooterLink liClass="mb-4" href={`/${langSelected}/bli-medlem`}>Bli medlem</FooterLink>
+        <FooterLink liClass="mb-4" href={`/${langSelected}/bli-medlem`}>{$t('navigation.member')}</FooterLink>
       </FooterLinkGroup>
     </div>
     <div>
-      <h2 class="mb-6 text-sm font-semibold uppercase text-gray dark:text-gray-100">Öppettider</h2>
+      <h2 class="mb-6 text-sm font-semibold uppercase text-gray dark:text-gray-100">{$t('footer.openinghoursname')}</h2>
       <div>
-        <p>Tis. - Fre. | 15.00 - 18.00</p>
+        <p>{$t('footer.openinghours')}</p>
       </div>
     </div>
     <div>
-      <h2 class="mb-6 text-sm font-semibold uppercase text-gray dark:text-gray-100">Kontakt</h2>
+      <h2 class="mb-6 text-sm font-semibold uppercase text-gray dark:text-gray-100">{$t('footer.contact')}</h2>
       <div>
         <p>Ronnebygatan 1</p>
         <p>211 58 Malmö</p>
