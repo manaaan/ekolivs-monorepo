@@ -3,5 +3,15 @@
   "meta": {
     "description": "Ekolivs är en liten kooperativ livsmedelsbutik i centrala Malmö med fokus på ekologiska och närproducerade varor."
   },
-  "text-1": "Välkommen till Ekolivs"
+  "section": {
+    "intro": {
+      "header": "Vad är Ekolivs?",
+      "p-1": "Vi är ett kooperativ som tillsammans står bakom butiken Ekolivs. Det vill säga att vi gemensamt äger och sköter allt. Alla har lika mycket inflytande - och ingen tredje part har makt över vad som finns i butiken eller hur priserna sätts."
+    },
+    "principles": {
+      "principle-1": "Alla ska ha råd med schysst mat!",
+      "principle-2": "Genom att äta vegetarisk, ekologisk och närproducerad mat kan du minska ditt klimatavtryck, bidra till mer biodiversitet och en bättre framtid för vår planet.",
+      "principle-3": "Det är viktigt att gynna småskaliga och lokala producenter som kan ha svårt att få in sina varor i stora butikskedjor."
+    }
+  }
 }

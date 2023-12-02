@@ -3,5 +3,15 @@
   "meta": {
     "description": "Ekolivs is a small cooperative grocery store in central Malmö with a focus on organic and locally produced goods."
   },
-  "text-1": "Welcome to Ekolivs"
+  "section": {
+    "intro": {
+      "header": "So, what is Ekolivs?",
+      "p-1": "We are a cooperative that organize the store Ekolivs. This means that we jointly own and manage everything. Everyone has equal influence - and no third party has power over what is available in the store or how prices are set."
+    },
+    "principles": {
+      "principle-1": "Everyone should be able to afford decent food!",
+      "principle-2": "By eating vegetarian, organic and locally produced food, you can reduce your carbon footprint, contribute to more biodiversity and a better future for our planet.",
+      "principle-3": "It is essential to support small-scale and local producers who may find it difficult to get their products into large retail chains."
+    }
+  }
 }
