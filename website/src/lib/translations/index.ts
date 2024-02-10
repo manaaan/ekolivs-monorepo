@@ -62,18 +62,6 @@ export const config: Config = {
     },
     {
       locale: 'en',
-      key: 'member',
-      routes: ['/bli-medlem'],
-      loader: async () => (await import('./locales/en/member.json')).default
-    },
-    {
-      locale: 'sv',
-      key: 'member',
-      routes: ['/bli-medlem'],
-      loader: async () => (await import('./locales/sv/member.json')).default
-    },
-    {
-      locale: 'en',
       key: 'engage',
       routes: ['/engagera-dig'],
       loader: async () => (await import('./locales/en/engage.json')).default
@@ -110,6 +98,18 @@ export const config: Config = {
     },
     {
       locale: 'en',
+      key: 'confirm-member',
+      routes: ['/registrerat'],
+      loader: async () => (await import('./locales/en/confirm-member.json')).default
+    },
+    {
+      locale: 'sv',
+      key: 'confirm-member',
+      routes: ['/registrerat'],
+      loader: async () => (await import('./locales/sv/confirm-member.json')).default
+    },
+    {
+      locale: 'en',
       key: 'footer',
       loader: async () => (await import('./locales/en/footer.json')).default
     },
@@ -135,9 +135,6 @@ export const {
 
 loading.subscribe(async ($loading) => {
   if ($loading) {
-    console.log('Loading translations...');
-
     await loading.toPromise();
-    console.log('Updated translations');
   }
 });

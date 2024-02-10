@@ -1,0 +1,11 @@
+{
+  "title": "Message sent - Ekolivs",
+  "meta": {
+    "description": "Confirmation that message has been sent about registration as new member."
+  },
+  "section": {
+    "header": "Message sent",
+    "p-1": "Thank you for your interest in becoming a member at Ekolivs!",
+    "p-2": "We'll come back to you as soon as possible to send you more details on what it means to be a member of our little cooperative."
+  }
+}
