@@ -2,6 +2,7 @@
   import { goto } from '$app/navigation';
   import '../app.postcss';
   import {
+    Button,
     Footer,
     FooterLinkGroup,
     FooterLink,
@@ -47,7 +48,7 @@
       <!-- empty block matching the logo to keep the rest of the nav bar in the same place -->
       <div class="h-6 sm:h-9 w-1/3 block" />
     {/if}
-    <div class="lg:w-1/3 md:w-1/6">
+    <div class="xl:w-1/3 md:w-1/12">
       <DarkMode
         size="sm"
         btnClass="p-0 block mx-auto"
@@ -55,13 +56,16 @@
         title={`Switch dark/light mode`}
       />
     </div>
-    <NavHamburger/>
-    <NavUl divClass="w-full lg:w-1/3 md:w-1/2 md:block">
+    <div class="flex align-center md:hidden">
+      <Button size="sm" class="ml-4" href={`/${langSelected}/engagera-dig`}>{$t('navigation.engage')}</Button>
+      <NavHamburger />
+    </div>
+    <NavUl divClass="w-full xl:w-1/3 md:w-1/2 md:block" ulClass="flex flex-col p-2 mt-4 md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-medium items-center">
       <NavLi href={`/${langSelected}`}>{$t('navigation.home')}</NavLi>
       <NavLi href={`/${langSelected}/vara-varor-2`}>{$t('navigation.products')}</NavLi>
       <NavLi href={`/${langSelected}/om-ekolivs-2`}>{$t('navigation.about')}</NavLi>
-      <NavLi href={`/${langSelected}/engagera-dig`}>{$t('navigation.engage')}</NavLi>
       <NavLi href={`/${langSelected}/kontakt`}>{$t('navigation.contact')}</NavLi>
+      <Button size="sm" class="ml-4 hidden md:block" href={`/${langSelected}/engagera-dig`}>{$t('navigation.engage')}</Button>
     </NavUl>
   </Navbar>
 
@@ -70,7 +74,7 @@
       <slot />
     </div>
   {:else}
-    <div class="px-8 pb-16 mt-20 mx-4 md:mx-16 mb-auto font-normal text-secondary-800 dark:text-secondary-100">
+    <div class="px-8 pb-16 mt-28 mx-4 md:mx-16 mb-auto font-normal text-secondary-800 dark:text-secondary-100">
       <slot />
     </div>
   {/if}
