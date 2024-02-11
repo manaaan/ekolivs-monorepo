@@ -2,7 +2,7 @@
   import { t } from '$lib/translations';
 </script>
 
-<svelte-head>
+<!-- <svelte-head>
   <title>{$t('products.title')}</title>
   <meta name="description" content={$t('products.meta.description')} />
   <meta name="robots" content="index, follow" />
@@ -31,7 +31,6 @@
   Leveransen till butiken kommer huvudsakligen på torsdagar.
 </p>
 
-<!-- <img /> -->
 
 <p>
   Mjölksyrade grönsaker innehåller mycket vitaminer och mineraler. Dessutom bildas probiotika vid
@@ -47,7 +46,6 @@
 
 <h4 class="text-2xl font-extrabold my-2">Nötter och frön</h4>
 
-<!-- <img /> -->
 
 <p>Urvalet varierar, men du hittar ofta följande på Ekolivs:</p>
 
@@ -108,7 +106,6 @@
   på de konventionella odlingarna enligt föreningen Swedwatch.
 </p>
 
-<!-- <img /> -->
 
 <p>
   K’inal importerar kaffe från zapatistiska kooperativ i södra Mexiko. I nuläget från kooperativet
@@ -124,7 +121,6 @@
 
 <p>Te i varierande urval</p>
 
-<!-- <img /> -->
 
 <h4 class="text-2xl font-extrabold my-2">Sylt och marmelad</h4>
 
@@ -137,7 +133,6 @@
 <p>Pesto från la Bio Idea</p>
 <p>Chokladkräm från Biona Organic</p>
 
-<!-- <img /> -->
 
 <h4 class="text-2xl font-extrabold my-2">Oljor och vinäger</h4>
 
@@ -145,4 +140,5 @@
   Rapsolja, neutral och smaksatt<br />från Gunnarshögs gård på Österlen, på flaska och bag-in-box
 </p>
 
-<!-- <img /> -->
+<img />
+-->

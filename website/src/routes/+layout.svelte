@@ -47,7 +47,7 @@
     <NavHamburger />
     <NavUl>
       <NavLi href={`/${langSelected}`}>{$t('navigation.home')}</NavLi>
-      <NavLi href={`/${langSelected}/vara-varor-2`}>{$t('navigation.products')}</NavLi>
+      <!-- <NavLi href={`/${langSelected}/vara-varor-2`}>{$t('navigation.products')}</NavLi> -->
       <NavLi href={`/${langSelected}/om-ekolivs-2`}>{$t('navigation.about')}</NavLi>
       <NavLi href={`/${langSelected}/engagera-dig`}>{$t('navigation.engage')}</NavLi>
       <NavLi href={`/${langSelected}/kontakt`}>{$t('navigation.contact')}</NavLi>
@@ -67,9 +67,9 @@
     <div>
       <h2 class="mb-6 text-sm font-semibold text-gray dark:text-gray-100 uppercase">Ekolivs</h2>
       <FooterLinkGroup ulClass="text-gray-900 dark:text-gray-200">
-        <FooterLink liClass="mb-4" href={`/${langSelected}/vara-varor-2`}
+        <!-- <FooterLink liClass="mb-4" href={`/${langSelected}/vara-varor-2`}
           >{$t('navigation.products')}</FooterLink
-        >
+        > -->
         <FooterLink liClass="mb-4" href={`/${langSelected}/om-ekolivs-2`}
           >{$t('navigation.about')}</FooterLink
         >
