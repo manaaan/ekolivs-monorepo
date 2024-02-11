@@ -2,6 +2,7 @@
   import { goto } from '$app/navigation';
   import '../app.postcss';
   import {
+    Button,
     Footer,
     FooterLinkGroup,
     FooterLink,
@@ -39,17 +40,20 @@
       <img src="/logo_white.png" class="mr-3 h-6 sm:h-9 hidden dark:block" alt="Ekolivs logo" />
     </NavBrand>
     <DarkMode
+      class="md:ml-auto"
       size="sm"
       btnClass="p-0"
       ariaLabel={`Switch dark/light mode`}
       title={`Switch dark/light mode`}
     />
+    <div class="flex md:order-2">
+      <Button size="sm" class="ml-4" href={`/${langSelected}/engagera-dig`}>{$t('navigation.engage')}</Button>
     <NavHamburger />
-    <NavUl>
+    </div>
+    <NavUl class="order-1 ml-auto">
       <NavLi href={`/${langSelected}`}>{$t('navigation.home')}</NavLi>
       <NavLi href={`/${langSelected}/vara-varor-2`}>{$t('navigation.products')}</NavLi>
       <NavLi href={`/${langSelected}/om-ekolivs-2`}>{$t('navigation.about')}</NavLi>
-      <NavLi href={`/${langSelected}/engagera-dig`}>{$t('navigation.engage')}</NavLi>
       <NavLi href={`/${langSelected}/kontakt`}>{$t('navigation.contact')}</NavLi>
     </NavUl>
   </Navbar>
