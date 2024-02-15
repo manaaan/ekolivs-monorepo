@@ -62,7 +62,7 @@
     </div>
     <NavUl divClass="w-full xl:w-1/3 md:w-1/2 md:block" ulClass="flex flex-col p-2 mt-4 md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-medium items-center">
       <NavLi href={`/${langSelected}`}>{$t('navigation.home')}</NavLi>
-      <NavLi href={`/${langSelected}/vara-varor-2`}>{$t('navigation.products')}</NavLi>
+      <!-- <NavLi href={`/${langSelected}/vara-varor-2`}>{$t('navigation.products')}</NavLi> -->
       <NavLi href={`/${langSelected}/om-ekolivs-2`}>{$t('navigation.about')}</NavLi>
       <NavLi href={`/${langSelected}/kontakt`}>{$t('navigation.contact')}</NavLi>
       <Button size="sm" class="ml-4 hidden md:block" href={`/${langSelected}/engagera-dig`}>{$t('navigation.engage')}</Button>
@@ -88,9 +88,9 @@
     <div>
       <h2 class="mb-6 text-sm font-semibold text-secondary dark:text-secondary-100 uppercase">Ekolivs</h2>
       <FooterLinkGroup ulClass="text-secondary-900 dark:text-secondary-200">
-        <FooterLink liClass="mb-4" href={`/${langSelected}/vara-varor-2`}
+        <!-- <FooterLink liClass="mb-4" href={`/${langSelected}/vara-varor-2`}
           >{$t('navigation.products')}</FooterLink
-        >
+        > -->
         <FooterLink liClass="mb-4" href={`/${langSelected}/om-ekolivs-2`}
           >{$t('navigation.about')}</FooterLink
         >
