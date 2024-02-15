@@ -24,6 +24,8 @@ steps:
         '${_IMAGE_PATH}:$COMMIT_SHA',
         '--region',
         'europe-west1',
+        '--update-secrets',
+        'POSTMARK_API_KEY=POSTMARK_API_KEY:latest',
         '--allow-unauthenticated'
       ]
 
