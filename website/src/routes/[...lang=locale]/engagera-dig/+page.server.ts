@@ -3,10 +3,10 @@ import NewMemberEkolivsEN from '$lib/emails/new-member-to-ekolivs.en.svelte';
 import NewMemberEkolivsSV from '$lib/emails/new-member-to-ekolivs.sv.svelte';
 import postmark from 'postmark';
 import { t, locale } from '$lib/translations';
-import { POSTMARK_API_KEY } from '$env/static/private';
+import { env } from '$env/dynamic/private';
 import { fail, redirect } from '@sveltejs/kit';
 
-const client = new postmark.ServerClient(POSTMARK_API_KEY as string);
+const client = new postmark.ServerClient(env.POSTMARK_API_KEY as string);
 
 async function sendMailToEkolivs(data: FormData) {
   if (!data.get('email')) {
