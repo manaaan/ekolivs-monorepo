@@ -21,6 +21,10 @@
   import { t, locale, locales } from '$lib/translations';
   import { page } from '$app/stores';
 
+  const isHomePage = (currentRoute: string): boolean => {
+    return currentRoute == "";
+  };
+
   let langSelected = $locale;
   const langs: SelectOptionType<string>[] = [];
   for (const loc of $locales) {
@@ -32,45 +36,58 @@
   $: ({ route } = $page.data);
 </script>
 
-<div class="relative px-8">
+<div class="relative">
   <Navbar color="form" class="px-2 sm:px-4 py-2.5 fixed w-full z-20 top-0 left-0 border-b">
-    <NavBrand href="/">
-      <!-- TODO: resolve hacky solution to js variables conditional render -->
-      <img src="/logo_black.png" class="mr-3 h-6 sm:h-9 block dark:hidden" alt="Ekolivs logo" />
-      <img src="/logo_white.png" class="mr-3 h-6 sm:h-9 hidden dark:block" alt="Ekolivs logo" />
-    </NavBrand>
-    <DarkMode
-      class="md:ml-auto"
-      size="sm"
-      btnClass="p-0"
-      ariaLabel={`Switch dark/light mode`}
-      title={`Switch dark/light mode`}
-    />
-    <div class="flex md:order-2">
-      <Button size="sm" class="ml-4" href={`/${langSelected}/engagera-dig`}>{$t('navigation.engage')}</Button>
-    <NavHamburger />
+    {#if !isHomePage(route)}
+      <NavBrand href="/" class="w-1/3">
+        <!-- TODO: resolve hacky solution to js variables conditional render -->
+        <img src="/logo_black.png" class="h-6 sm:h-9 block dark:hidden" alt="Ekolivs logo" />
+        <img src="/logo_white.png" class="h-6 sm:h-9 hidden dark:block" alt="Ekolivs logo" />
+      </NavBrand>
+    {:else}
+      <!-- empty block matching the logo to keep the rest of the nav bar in the same place -->
+      <div class="h-6 sm:h-9 w-1/3 block" />
+    {/if}
+    <div class="xl:w-1/3 md:w-1/12">
+      <DarkMode
+        size="sm"
+        btnClass="p-0 block mx-auto"
+        ariaLabel={`Switch dark/light mode`}
+        title={`Switch dark/light mode`}
+      />
     </div>
-    <NavUl class="order-1 ml-auto">
+    <div class="flex align-center md:hidden">
+      <Button size="sm" class="ml-4" href={`/${langSelected}/engagera-dig`}>{$t('navigation.engage')}</Button>
+      <NavHamburger />
+    </div>
+    <NavUl divClass="w-full xl:w-1/3 md:w-1/2 md:block" ulClass="flex flex-col p-2 mt-4 md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-medium items-center">
       <NavLi href={`/${langSelected}`}>{$t('navigation.home')}</NavLi>
       <!-- <NavLi href={`/${langSelected}/vara-varor-2`}>{$t('navigation.products')}</NavLi> -->
       <NavLi href={`/${langSelected}/om-ekolivs-2`}>{$t('navigation.about')}</NavLi>
       <NavLi href={`/${langSelected}/kontakt`}>{$t('navigation.contact')}</NavLi>
+      <Button size="sm" class="ml-4 hidden md:block" href={`/${langSelected}/engagera-dig`}>{$t('navigation.engage')}</Button>
     </NavUl>
   </Navbar>
 
-  <div class="pb-16 mt-20 mx-4 md:mx-16 mb-auto font-normal text-gray-700 dark:text-gray-300">
-    <slot />
-  </div>
+  {#if isHomePage(route)}
+    <div class="h-full mt-20 mb-auto font-normal text-secondary-800 dark:text-secondary-100">
+      <slot />
+    </div>
+  {:else}
+    <div class="px-8 pb-16 mt-28 mx-4 md:mx-16 mb-auto font-normal text-secondary-800 dark:text-secondary-100">
+      <slot />
+    </div>
+  {/if}
 </div>
 
 <Footer
   footerType="sitemap"
-  class="bg-primary-100 dark:bg-primary-700 text-gray-900 dark:text-gray-200 border-gray-300 dark:border-gray-700"
+  class="relative z-10 bg-primary-200 dark:bg-primary-700 text-secondary-900 dark:text-secondary-200 border-secondary-300 dark:border-secondary-700"
 >
   <div class="grid grid-cols-1 sm:grid-cols-2 gap-8 py-8 px-6 md:grid-cols-4">
     <div>
-      <h2 class="mb-6 text-sm font-semibold text-gray dark:text-gray-100 uppercase">Ekolivs</h2>
-      <FooterLinkGroup ulClass="text-gray-900 dark:text-gray-200">
+      <h2 class="mb-6 text-sm font-semibold text-secondary dark:text-secondary-100 uppercase">Ekolivs</h2>
+      <FooterLinkGroup ulClass="text-secondary-900 dark:text-secondary-200">
         <!-- <FooterLink liClass="mb-4" href={`/${langSelected}/vara-varor-2`}
           >{$t('navigation.products')}</FooterLink
         > -->
@@ -83,10 +100,10 @@
       </FooterLinkGroup>
     </div>
     <div>
-      <h2 class="mb-6 text-sm font-semibold uppercase text-gray dark:text-gray-100">
+      <h2 class="mb-6 text-sm font-semibold uppercase text-secondary dark:text-secondary-100">
         {$t('footer.membership')}
       </h2>
-      <FooterLinkGroup ulClass="text-gray-900 dark:text-gray-200">
+      <FooterLinkGroup ulClass="text-secondary-900 dark:text-secondary-200">
         <FooterLink liClass="mb-4" href={`/${langSelected}/stadgar`}
           >{$t('navigation.bylaws')}</FooterLink
         >
@@ -99,7 +116,7 @@
       </FooterLinkGroup>
     </div>
     <div>
-      <h2 class="mb-6 text-sm font-semibold uppercase text-gray dark:text-gray-100">
+      <h2 class="mb-6 text-sm font-semibold uppercase text-secondary dark:text-secondary-100">
         {$t('footer.openinghoursname')}
       </h2>
       <div>
@@ -107,7 +124,7 @@
       </div>
     </div>
     <div>
-      <h2 class="mb-6 text-sm font-semibold uppercase text-gray dark:text-gray-100">
+      <h2 class="mb-6 text-sm font-semibold uppercase text-secondary dark:text-secondary-100">
         {$t('footer.contact')}
       </h2>
       <div>
@@ -120,7 +137,7 @@
     </div>
   </div>
   <div
-    class="py-6 px-4 bg-primary-100 dark:bg-primary-700 text-gray-900 dark:text-white border-gray-300 dark:border-gray-700 md:flex md:items-center md:justify-between"
+    class="py-6 px-4 bg-primary-200 dark:bg-primary-700 text-secondary-900 dark:text-white border-secondary-300 dark:border-secondary-700 md:flex md:items-center md:justify-between"
   >
     <FooterCopyright spanClass="text-sm sm:text-center" href="/" by="Ekolivs" />
     <Select
@@ -136,13 +153,13 @@
     <div class="flex mt-4 space-x-6 sm:justify-center md:mt-0">
       <FooterIcon href="https://www.facebook.com/Ekolivs/" target="_blank">
         <FacebookSolid
-          class="w-6 h-6 text-gray-500 dark:text-gray-300 hover:text-gray-900 dark:hover:text-white"
+          class="w-6 h-6 text-secondary-500 dark:text-secondary-300 hover:text-secondary-900 dark:hover:text-white"
         />
       </FooterIcon>
       <FooterIcon href="https://www.instagram.com/ekolivs/" target="_blank">
         <!-- Instagram logo -->
         <svg
-          class="w-6 h-6 text-gray-500 dark:text-gray-300 hover:text-gray-900 dark:hover:text-white"
+          class="w-6 h-6 text-secondary-500 dark:text-secondary-300 hover:text-secondary-900 dark:hover:text-white"
           xmlns="http://www.w3.org/2000/svg"
           fill="currentColor"
           viewBox="0 0 24 24"
