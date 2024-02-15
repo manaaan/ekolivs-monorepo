@@ -6,9 +6,10 @@ import { t, locale } from '$lib/translations';
 import { env } from '$env/dynamic/private';
 import { fail, redirect } from '@sveltejs/kit';
 
-const client = new postmark.ServerClient(env.POSTMARK_API_KEY as string);
 
 async function sendMailToEkolivs(data: FormData) {
+  const client = new postmark.ServerClient(env.POSTMARK_API_KEY as string);
+  
   if (!data.get('email')) {
     throw new Error('Must provide email');
   } else if (!data.get('name')) {
