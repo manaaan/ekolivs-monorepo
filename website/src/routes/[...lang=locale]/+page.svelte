@@ -7,7 +7,7 @@
 <style>
   .parallax {
     /* The image used */
-    background-image: url("shelf-veggies.jpg");
+    background-image: url("/shelf-veggies.jpg");
 
     min-height: 600px;
     height: 100%;
