@@ -132,7 +132,6 @@
         <p>211 58 Malmö</p>
         <br />
         <p>info@ekolivs.se</p>
-        <p>Tel: +46 736-10 18 90</p>
       </div>
     </div>
   </div>
