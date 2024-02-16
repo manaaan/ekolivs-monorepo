@@ -110,9 +110,9 @@
         <FooterLink liClass="mb-4" href={`/${langSelected}/engagera-dig`}
           >{$t('navigation.engage')}</FooterLink
         >
-        <FooterLink liClass="mb-4" href={`/${langSelected}/bli-medlem`}
+        <!-- <FooterLink liClass="mb-4" href={`/${langSelected}/bli-medlem`}
           >{$t('navigation.member')}</FooterLink
-        >
+          > -->
       </FooterLinkGroup>
     </div>
     <div>
