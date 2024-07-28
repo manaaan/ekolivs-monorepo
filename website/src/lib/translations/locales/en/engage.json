@@ -9,7 +9,7 @@
       "p-1": "Ekolivs is run entirely by volunteers. As an active member, you keep the store open and together with various workgroups, we manage purchases, economy, signage, PR and other small store tasks. We want to get more members and we need you who want to give your engagement, energy, and knowledge to make it possible. But, it is not a must to actively engage in running the store, you can also be a support member and support our operations by shopping in the store."
     },
     "membership": {
-      "header": "What do I get as a member?",
+      "header": "What does it mean to be a member?",
       "all": {
         "header": "All members:",
         "benefit-1": "Invitation to all member meetings and become part of our wonderful community",
@@ -18,7 +18,7 @@
       "active": {
         "header": "Active members (Volunteers):",
         "benefit-1": "15% discount on all purchases in the store.",
-        "benefit-2": "Keeps the store open approximately two shifts per month and engages in one of our workgroups"
+        "benefit-2": "Helps out in at least one of our workgroups"
       },
       "passive": {
         "header": "Support members:",

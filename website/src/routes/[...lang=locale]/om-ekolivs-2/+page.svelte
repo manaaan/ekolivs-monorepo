@@ -29,6 +29,11 @@
 <br />
 <ul class="list-disc list-inside">
   <li>
+    <b>{$t('about.section.general.groups.staff.name')}</b> - {$t(
+      'about.section.general.groups.staff.desc'
+    )}
+  </li>
+  <li>
     <b>{$t('about.section.general.groups.buying.name')}</b> - {$t(
       'about.section.general.groups.buying.desc'
     )}
@@ -46,6 +51,11 @@
   <li>
     <b>{$t('about.section.general.groups.store.name')}</b> - {$t(
       'about.section.general.groups.store.desc'
+    )}
+  </li>
+  <li>
+    <b>{$t('about.section.general.groups.it.name')}</b> - {$t(
+      'about.section.general.groups.it.desc'
     )}
   </li>
 </ul>

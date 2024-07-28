@@ -13,24 +13,32 @@
       "p-1": "Ekolivs is a small, non-profit grocery store in central Malmö, which has existed in it's current form since 2006. We are a cooperative and the operation is democratically run by the members of the association through membership meetings and various working groups. Our purpose is not to generate profit, but rather to meet the common interest of the members for organic, fair and locally produced food and other daily goods, and to be able to offer this at a good price. We also want to highlight local small scale producers and spread knowledge about and encourage a sustainable lifestyle.",
       "p-2": "The association has two types of membership, active membership and supportive membership, which are associated with different discounts depending on the level of engagement. Active members manage the daily operation of Ekolivs. In addition to keeping the store open, members are organized in four working groups:",
       "groups": {
+        "staff": {
+          "name": "Passgruppen (Staffing group)",
+          "desc": "Staffing of the store"
+        },
         "buying": {
-          "name": "Purchasing group",
+          "name": "Inköpsgruppen (Purchasing group)",
           "desc": "Places orders, has contact with existing suppliers and is the first contact with potential suppliers"
         },
         "economy": {
-          "name": "Economy group",
+          "name": "Ekonomigruppen (Economy group)",
           "desc": "Handles bookkeeping, pays invoices, and manages cash"
         },
         "pr": {
-          "name": "PR group",
+          "name": "PR-gruppen (PR group)",
           "desc": "Responsible for the website, social media and other marketing, as well as planning events and collaborations"
         },
         "store": {
-          "name": "Store group",
+          "name": "Butiksgruppen (Store group)",
           "desc": "Decorates and keeps the store clean, responsible for store routines"
+        },
+        "it": {
+          "name": "IT-Gruppen (IT group)",
+          "desc": "Take care of the website, mails and other technical tasks"
         }
       },
-      "p-3": "In addition to these, we have a board that also takes care of overall tasks and planning for membership meetings and annual meetings."
+      "p-3": "You can be a member in one or more of these groups, depending on how much time you want to invest into Ekolivs right now. In addition to these, we have a board that also takes care of overall tasks and planning for membership meetings and annual meetings."
     },
     "join": {
       "header": "Engage in Ekolivs",
