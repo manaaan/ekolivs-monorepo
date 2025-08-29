@@ -9,10 +9,13 @@
     /* The image used */
     background-image: url("/shelf-veggies.jpg");
 
-    min-height: 600px;
+    min-height: calc(100vh - 4.5rem);
     height: 100%;
+    width: 100%;
 
-    z-index: 99;
+    z-index: -100;
+
+    position: absolute;
 
     /* Create the parallax scrolling effect */
     background-attachment: fixed;
@@ -28,11 +31,8 @@
   <meta name="robots" content="index, follow" />
 </svelte-head>
 
+<div class="parallax"></div>
 <div>
-  <img src="/logo_black.png" class="mx-auto mt-28 mb-8 h-16 sm:h-24 block dark:hidden" alt="Ekolivs logo" />
-  <img src="/logo_white.png" class="mx-auto mt-28 mb-8 h-16 sm:h-24 hidden dark:block" alt="Ekolivs logo" />
-</div>
-<div class="parallax">
   <div class="h-20"/>
   <div class="grid grid-cols-1 md:grid-cols-2 gap-8 p-8 bg-white dark:bg-secondary-950 opacity-75">
     <div class="max-w-xl ml-auto">

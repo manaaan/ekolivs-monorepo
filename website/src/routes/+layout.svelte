@@ -31,33 +31,26 @@
 </script>
 
 <div class="relative">
-  <Navbar color="form" class="px-2 sm:px-4 py-2.5 fixed w-full z-20 top-0 left-0 border-b">
-    {#if !isHomePage(route)}
-      <NavBrand href="/" class="w-1/3">
-        <!-- TODO: resolve hacky solution to js variables conditional render -->
-        <img src="/logo_black.png" class="h-6 sm:h-9 block dark:hidden" alt="Ekolivs logo" />
-        <img src="/logo_white.png" class="h-6 sm:h-9 hidden dark:block" alt="Ekolivs logo" />
-      </NavBrand>
-    {:else}
-      <!-- empty block matching the logo to keep the rest of the nav bar in the same place -->
-      <div class="h-6 sm:h-9 w-1/3 block" />
-    {/if}
-    <div class="flex xl:w-1/3 md:w-1/12">
+  <Navbar color="form" class="bg-primary dark:bg-primary-900 px-1 sm:px-4 py-2.5 fixed w-full z-20 top-0 left-0 border-0">
+    <NavBrand href={`/${langSelected}`} class="lg:w-1/3">
+      <img src="/logo_white.png" class="h-6 sm:h-9 block" alt="Ekolivs logo" />
+    </NavBrand>
+    <div class="flex lg:w-1/3 md:w-1/12">
       <div class="inline-flex mx-auto">
         <button
           id="lang-button"
-          class="inline-flex shrink-0 items-center bg-gray-100 px-2 py-2 text-center text-sm font-medium text-gray-500 hover:bg-gray-200 focus:ring-4 focus:ring-gray-100 focus:outline-hidden dark:bg-gray-700 dark:text-white dark:hover:bg-gray-600 dark:focus:ring-gray-700"
+          class="inline-flex shrink-0 items-center px-0 sm:px-2 py-2 hover:bg-primary-400 focus:ring-4 focus:ring-gray-100 focus:outline-hidden dark:text-white dark:hover:bg-gray-600 dark:focus:ring-gray-700"
           type="button"
           title="Currently selected language: {langSelected}"
           aria-label="Change active language displayed on this site."
         >
           <Img src="/{langSelected}.svg" alt={langSelected} />
-          <ChevronDownOutline class="ms-2 h-2 w-2" />
+          <ChevronDownOutline class="ms-2 h-2 w-2 text-white" />
         </button>
-        <Dropdown triggeredBy="#lang-button" class="py-0">
+        <Dropdown triggeredBy="#lang-button" class="py-0 bg-primary-500">
           {#each $locales as lang}
             <DropdownItem
-              class="flex items-center py-2 px-4"
+              class="flex items-center py-2 px-2 sm:px-4 hover:bg-primary-400"
               on:click={() => {
                 langSelected = lang;
                 goto(`/${lang}${route}`);
@@ -69,23 +62,22 @@
         </Dropdown>
         <DarkMode
           size="sm"
-          btnClass="p-2 ml-1  block hover:bg-gray-200 focus:ring-4 focus:ring-gray-100 focus:outline-hidden dark:bg-gray-700 dark:text-white dark:hover:bg-gray-600 dark:focus:ring-gray-700"
+          btnClass="py-2 px-0 sm:px-2 ml-1  block hover:bg-primary-400 focus:ring-4 focus:ring-gray-100 focus:outline-hidden text-white dark:hover:bg-gray-600 dark:focus:ring-gray-700"
           ariaLabel={`Switch dark/light mode`}
           title={`Switch dark/light mode`}
         />
       </div>
     </div>
     <div class="flex align-center md:hidden">
-      <Button size="sm" class="ml-1" href={`/${langSelected}/engagera-dig`}
+      <Button size="sm" class="ml-0 sm:ml-1" href={`/${langSelected}/engagera-dig`}
         >{$t('navigation.engage')}</Button
       >
-      <NavHamburger />
+      <NavHamburger menuClass="w-5" />
     </div>
     <NavUl
-      divClass="w-full xl:w-1/3 md:w-1/2 md:block"
-      ulClass="flex flex-col p-2 mt-4 md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-medium items-center"
+      divClass="w-full lg:w-1/3 md:w-1/2 md:block"
+      ulClass="flex flex-col p-2 mt-4 md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-medium justify-end items-center"
     >
-      <NavLi href={`/${langSelected}`}>{$t('navigation.home')}</NavLi>
       <!-- <NavLi href={`/${langSelected}/vara-varor-2`}>{$t('navigation.products')}</NavLi> -->
       <NavLi href={`/${langSelected}/om-ekolivs-2`}>{$t('navigation.about')}</NavLi>
       <NavLi href={`/${langSelected}/kontakt`}>{$t('navigation.contact')}</NavLi>
@@ -96,7 +88,7 @@
   </Navbar>
 
   {#if isHomePage(route)}
-    <div class="h-full mt-20 mb-auto font-normal text-secondary-800 dark:text-secondary-100">
+    <div class="h-full mt-[3.5rem] md:mt-[4.5rem] mb-auto font-normal text-secondary-800 dark:text-secondary-100">
       <slot />
     </div>
   {:else}
@@ -110,7 +102,7 @@
 
 <Footer
   footerType="sitemap"
-  class="relative z-10 bg-primary-200 dark:bg-primary-700 text-secondary-900 dark:text-secondary-200 border-secondary-300 dark:border-secondary-700"
+  class="relative z-10 bg-primary dark:bg-primary-900 text-white"
 >
   <div class="grid grid-cols-1 sm:grid-cols-2 gap-8 py-8 px-6 md:grid-cols-4">
     <div>
@@ -166,7 +158,7 @@
     </div>
   </div>
   <div
-    class="py-6 px-4 bg-primary-200 dark:bg-primary-700 text-secondary-900 dark:text-white border-secondary-300 dark:border-secondary-700 md:flex md:items-center md:justify-between"
+    class="py-6 px-4 bg-primary-500 dark:bg-primary-900 text-secondary-900 dark:text-white border-secondary-300 dark:border-secondary-700 md:flex md:items-center md:justify-between"
   >
     <FooterCopyright spanClass="text-sm sm:text-center" href="/" by="Ekolivs" />
     <div class="flex mt-4 space-x-6 sm:justify-center md:mt-0">
