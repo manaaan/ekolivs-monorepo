@@ -14,25 +14,19 @@
     NavUl,
     NavHamburger,
     DarkMode,
-    Select,
-    type SelectOptionType
+    Dropdown,
+    DropdownItem,
+    Img
   } from 'flowbite-svelte';
-  import { FacebookSolid } from 'flowbite-svelte-icons';
+  import { ChevronDownOutline, FacebookSolid } from 'flowbite-svelte-icons';
   import { t, locale, locales } from '$lib/translations';
   import { page } from '$app/stores';
 
   const isHomePage = (currentRoute: string): boolean => {
-    return currentRoute == "";
+    return currentRoute == '';
   };
 
   let langSelected = $locale;
-  const langs: SelectOptionType<string>[] = [];
-  for (const loc of $locales) {
-    langs.push({
-      value: loc,
-      name: $t(`lang.${loc}`)
-    });
-  }
   $: ({ route } = $page.data);
 </script>
 
@@ -48,24 +42,56 @@
       <!-- empty block matching the logo to keep the rest of the nav bar in the same place -->
       <div class="h-6 sm:h-9 w-1/3 block" />
     {/if}
-    <div class="xl:w-1/3 md:w-1/12">
-      <DarkMode
-        size="sm"
-        btnClass="p-0 block mx-auto"
-        ariaLabel={`Switch dark/light mode`}
-        title={`Switch dark/light mode`}
-      />
+    <div class="flex xl:w-1/3 md:w-1/12">
+      <div class="inline-flex mx-auto">
+        <button
+          id="lang-button"
+          class="inline-flex shrink-0 items-center bg-gray-100 px-2 py-2 text-center text-sm font-medium text-gray-500 hover:bg-gray-200 focus:ring-4 focus:ring-gray-100 focus:outline-hidden dark:bg-gray-700 dark:text-white dark:hover:bg-gray-600 dark:focus:ring-gray-700"
+          type="button"
+          title="Currently selected language: {langSelected}"
+          aria-label="Change active language displayed on this site."
+        >
+          <Img src="/{langSelected}.svg" alt={langSelected} />
+          <ChevronDownOutline class="ms-2 h-2 w-2" />
+        </button>
+        <Dropdown triggeredBy="#lang-button" class="py-0">
+          {#each $locales as lang}
+            <DropdownItem
+              class="flex items-center py-2 px-4"
+              on:click={() => {
+                langSelected = lang;
+                goto(`/${lang}${route}`);
+              }}
+            >
+              <Img src="/{lang}.svg" alt={lang} title="Select language {lang}" />
+            </DropdownItem>
+          {/each}
+        </Dropdown>
+        <DarkMode
+          size="sm"
+          btnClass="p-2 ml-1  block hover:bg-gray-200 focus:ring-4 focus:ring-gray-100 focus:outline-hidden dark:bg-gray-700 dark:text-white dark:hover:bg-gray-600 dark:focus:ring-gray-700"
+          ariaLabel={`Switch dark/light mode`}
+          title={`Switch dark/light mode`}
+        />
+      </div>
     </div>
     <div class="flex align-center md:hidden">
-      <Button size="sm" class="ml-4" href={`/${langSelected}/engagera-dig`}>{$t('navigation.engage')}</Button>
+      <Button size="sm" class="ml-1" href={`/${langSelected}/engagera-dig`}
+        >{$t('navigation.engage')}</Button
+      >
       <NavHamburger />
     </div>
-    <NavUl divClass="w-full xl:w-1/3 md:w-1/2 md:block" ulClass="flex flex-col p-2 mt-4 md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-medium items-center">
+    <NavUl
+      divClass="w-full xl:w-1/3 md:w-1/2 md:block"
+      ulClass="flex flex-col p-2 mt-4 md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-medium items-center"
+    >
       <NavLi href={`/${langSelected}`}>{$t('navigation.home')}</NavLi>
       <!-- <NavLi href={`/${langSelected}/vara-varor-2`}>{$t('navigation.products')}</NavLi> -->
       <NavLi href={`/${langSelected}/om-ekolivs-2`}>{$t('navigation.about')}</NavLi>
       <NavLi href={`/${langSelected}/kontakt`}>{$t('navigation.contact')}</NavLi>
-      <Button size="sm" class="ml-4 hidden md:block" href={`/${langSelected}/engagera-dig`}>{$t('navigation.engage')}</Button>
+      <Button size="sm" class="ml-4 hidden md:block" href={`/${langSelected}/engagera-dig`}
+        >{$t('navigation.engage')}</Button
+      >
     </NavUl>
   </Navbar>
 
@@ -74,7 +100,9 @@
       <slot />
     </div>
   {:else}
-    <div class="px-8 pb-16 mt-28 mx-4 md:mx-16 mb-auto font-normal text-secondary-800 dark:text-secondary-100">
+    <div
+      class="px-8 pb-16 mt-28 mx-4 md:mx-16 mb-auto font-normal text-secondary-800 dark:text-secondary-100"
+    >
       <slot />
     </div>
   {/if}
@@ -86,7 +114,9 @@
 >
   <div class="grid grid-cols-1 sm:grid-cols-2 gap-8 py-8 px-6 md:grid-cols-4">
     <div>
-      <h2 class="mb-6 text-sm font-semibold text-secondary dark:text-secondary-100 uppercase">Ekolivs</h2>
+      <h2 class="mb-6 text-sm font-semibold text-secondary dark:text-secondary-100 uppercase">
+        Ekolivs
+      </h2>
       <FooterLinkGroup ulClass="text-secondary-900 dark:text-secondary-200">
         <!-- <FooterLink liClass="mb-4" href={`/${langSelected}/vara-varor-2`}
           >{$t('navigation.products')}</FooterLink
@@ -139,16 +169,6 @@
     class="py-6 px-4 bg-primary-200 dark:bg-primary-700 text-secondary-900 dark:text-white border-secondary-300 dark:border-secondary-700 md:flex md:items-center md:justify-between"
   >
     <FooterCopyright spanClass="text-sm sm:text-center" href="/" by="Ekolivs" />
-    <Select
-      class="w-auto max-w-200 mt-2"
-      items={langs}
-      bind:value={langSelected}
-      on:change={({ target }) => {
-        // @ts-expect-error value does exist on target
-        goto(`/${target.value}${route}`);
-      }}
-      placeholder="Choose language"
-    />
     <div class="flex mt-4 space-x-6 sm:justify-center md:mt-0">
       <FooterIcon href="https://www.facebook.com/Ekolivs/" target="_blank">
         <FacebookSolid
